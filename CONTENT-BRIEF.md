@@ -1,127 +1,134 @@
-# Pipe Monkeys — Content Brief
+# O'Connor & Sons Electric — Content Brief
 **QuickFlip Sites | Build Log**
-Date: April 2026
-Prospect: pipemonkeys.com (Brooklyn, Queens & Nassau County drain/sewer)
-Template: NCCER clone (Next.js 14 App Router)
-Reference site: apexroofingpro.com
+Date: 2026-05-08
+Prospect: https://paloaltoelectric.com (redirects to O'Connor & Sons Electric site)
+Template: PipeMonkey-Redesign
+Reference site: N/A (source site was the primary reference)
 
 ---
 
 ## Source Material Summary
 
-Pipe Monkeys' existing site is a **single-page WordPress build** — no subpages, no blog, no gallery. All content was pulled from that one page and distributed across the template's 7-page structure. Key details extracted:
+**Business:** O'Connor & Sons Electric
+**Phone:** (650) 740-1121
+**Address:** 849 Clara Drive, Palo Alto, CA 94303
+**Email:** oconnorelectric@comcast.net
+**Hours:** Mon–Sat 7:30AM–8:30PM · Sun 10AM–5PM
+**License:** California C10 Electrical — License #513626
 
-- **Phone:** (718) 749-1830
-- **Service area:** Brooklyn, Queens, Nassau County
-- **Services:** Main sewer line, kitchen sink, tub/shower, toilet, hydro jetting, drain snaking, camera inspection, multi-unit/commercial
-- **Differentiators from site copy:** Upfront pricing, local NYC techs, cleanup guarantee, same-day scheduling
-- **Key testimonial:** Daniel Pipitone, Brooklyn homeowner — Google review
+**Ratings:**
+- Yelp: 5.0★, 593 reviews
+- Nextdoor: 172 Faves
+- BBB: Accredited since July 17, 2017
+
+**Service Area:** Palo Alto, Menlo Park, Mountain View, Los Altos, Sunnyvale, Atherton, and surrounding Peninsula communities
+
+**Key differentiators (from prospect site + reviews):**
+- Family-owned, 30+ years serving Palo Alto
+- European-trained electricians
+- Owners answer calls directly — Tom picks up
+- Same-day service commonly available
+- Permitted work, inspections passed first time
+
+**Crawl notes:** The prospect's own website (paloaltoelectric.com) had near-zero content — just a phone number, address, and three bullet-point value props ("Commercial · Residential · Remodeling"). All service detail, testimonials, and differentiators were sourced from:
+- Yelp listing (scraped via Yahoo Local and search result snippets — direct Yelp was 403 blocked)
+- Nextdoor listing (successfully scraped via Apify RAG browser)
+- BBB listing (data confirmed via search snippets)
+- Google Business Profile snippets (hours, address, license)
+
+---
+
+## Service Inventory
+
+Every service below was inferred from review content and the prospect's stated trade categories (Commercial · Residential · Remodeling), since the source site listed no individual services.
+
+1. Electrical Troubleshooting
+2. Panel & Subpanel Upgrades
+3. Residential Electrical
+4. Commercial Electrical
+5. Remodeling & New Construction
+6. Lighting Installation
+7. Outlet & Switch Repair
+8. Smart Home Wiring (Vantage systems mentioned in reviews)
+9. EV Charger & Battery Systems (Tesla Powerwall mentioned in reviews)
+
+---
+
+## Services Consolidated
+
+None. All 9 services kept as separate entries.
 
 ---
 
 ## Pages Built & Content Decisions
 
-### 1. Homepage (`app/page.tsx`)
-**Structure:** Hero → How It Works → Why Pipe Monkeys (stats) → Testimonial
+### Homepage (app/page.tsx)
+Kept: Hero, Difference, Announcements, Insights accordion, Testimonials, HomeCTA sections.
+Removed: Donation widget (not applicable to trade clients).
+All section copy rewritten for electrical trade / O'Connor & Sons.
 
-**Kept from source:** Business headline concept, service area list, tech credentials, upfront pricing promise, cleanup guarantee, testimonial
+### About Us (data/channel/oconnor-sons.tsx → /explore/oconnor-sons)
+Built from: prospect site value props, Yelp/Nextdoor review content, BBB accreditation data.
+Generated: learnMore long-form copy (European training background, 30-year history, care philosophy) — flagged in Copy Generation Log.
 
-**Cut from template:** Insights tabbed section (NCCER org-specific), Donation widget, Research section, News section — all irrelevant to a trade service business
+### Services Index (/craft-catalog)
+9 services matching the Service Inventory. Each service has its own dynamic page under /craft-catalog/[slug].
 
-**Generated:** "How It Works" 3-step process (Diagnose → Approve & Clear → Confirm & Clean Up) — written to match PM's stated process; short and concrete, no fluff
+### Service Pages (data/craft-catalog/service-pages.tsx)
+Built from: trade knowledge + review mentions of specific job types.
+Each service has: overview, 2 detail sections, quick-links with phone CTA, 3–4 related services.
 
-**Stats block:** "Same-Day", "4.9★", "100%" — drawn from real review signals. Note: Verify exact review count and rating with client before launch.
+### FAQs (/general-faqs)
+8 electrical FAQs covering: licensing, permits, panel capacity, EV chargers, same-day availability, commercial work, costs, and cleanup. Generated from trade knowledge — flagged in Copy Generation Log.
 
----
+### Contact Us (/contact-us)
+4 service area cards: Palo Alto core, Menlo Park/Atherton, Mountain View/Los Altos/Sunnyvale, Surrounding Peninsula.
+Form includes 10-item service dropdown.
+Google Maps embed pointed to 849 Clara Drive (TODO: confirm embed URL).
 
-### 2. About Us (`app/explore/[slug]/page.tsx` → `/explore/pipemonkeys`)
-**Data file:** `data/channel/pipemonkeys.tsx`
+### Gallery (/gallery)
+4 placeholder job cards: Panel Upgrade, Track Lighting, Weatherproof Outlet, EV Charger Circuit.
+All images are TODOs — no photos were extractable from the prospect site.
 
-**Kept:** All copy about the business ethos, local knowledge angle, upfront pricing, cleanup guarantee, Daniel Pipitone testimonial
+### Service Areas (/service-areas)
+4 area sections: Palo Alto, Menlo Park/Atherton, Mountain View/Los Altos/Sunnyvale, Surrounding Peninsula.
+Copy localized to each area's housing stock and electrical context.
 
-**Restructured:** Split into 4 headed subsections (Upfront Pricing, Local NYC Technicians, Clean Every Time, Real Results Guaranteed) — matches how Apex Roofing Pro handled their About section: scannable, value-point driven
+### Blog (/blog)
+6 placeholder posts. All flagged TODO — client should populate with real content or approve generated stubs.
+Titles: Panel Upgrade Guide, EV Charger Install, Eichler Wiring, Powerwall Install, Permit Process, Flickering Lights.
 
-**Generated:** Intro paragraph ("When drains back up, homeowners need someone fast, honest, and effective…") — 1 tight paragraph, no fluff
-
----
-
-### 3. Services Catalog (`app/craft-catalog/page.tsx`)
-**Data file:** `data/craft-catalog/crafts.ts`
-
-**Replaced:** 67 NCCER craft items → 8 PM services
-- Main Sewer Lines | Kitchen Sinks | Tubs & Showers | Toilets | Hydro Jetting | Drain Snaking & Augering | Camera Inspection | Multi-Unit & Commercial Buildings
-
-**Category taxonomy:** Drain Cleaning / Advanced Services / Commercial — mirrors the filterable nav pattern from the template
-
----
-
-### 4. Service Detail Pages (`app/programs-crafts/programs/page.tsx`)
-**Data file:** `data/programs.tsx`
-
-**Kept:** PM's actual service descriptions, rewritten for clarity and scannability
-
-**Generated:** Service descriptions for each of the 7 services — written from PM's existing single-page copy, expanded slightly to fill the card format. Each is 1 focused paragraph, no padding.
-
-**Cut:** Partner logos section (no external partners applicable)
+### Privacy Policy (/privacy-policy)
+Template text updated: "Pipe Monkeys" → "O'Connor & Sons Electric", phone and address swapped.
 
 ---
 
-### 5. FAQs (`app/general-faqs/page.tsx`)
+## Navigation
 
-**Kept:** All 7 FAQs are grounded in PM's real positioning and services — pulled directly from what the site communicated
-
-**Generated:** Q&A format copy — none of it contradicts PM's actual service model. All answers directly mirror their stated approach (upfront pricing, cleanup, same-day scheduling)
-
-**CTA:** Changed from NCCER donation to phone call CTA
-
----
-
-### 6. Contact Us (`app/contact-us/page.tsx`)
-
-**Kept:** Phone number, service area info, form embed (HubSpot iframe — left in place)
-
-**Replaced:** NCCER staff directory → 3 service area cards (Brooklyn, Queens, Nassau) with full neighborhood lists
-
-**TODO flagged:** Contact form iframe — client needs to verify the HubSpot form ID or replace with their preferred form tool
+Simplified from template mega-nav to 4 flat items:
+- Home → /
+- Our Services → /craft-catalog
+- About Us → /explore/oconnor-sons
+- Contact → /contact-us
 
 ---
 
-### 7. Gallery (`app/gallery/page.tsx`) — **NEW PAGE**
-**Source:** Reference site (Apex Roofing Pro) showed Before/After gallery as a primary trust signal. PM has no existing gallery.
+## Copy Generation Log
 
-**Decision:** Built full gallery page with 6 placeholder before/after cards across all service categories. Layout uses 2-column before/after image pairs per job card.
+The following copy was generated (not extracted from the prospect's site):
 
-**All images flagged:** `[TODO: swap image]` throughout — client needs to provide real job photos
+| Item | File | Notes |
+|------|------|-------|
+| learnMore body | data/channel/oconnor-sons.tsx | European training background, 30-yr history, care philosophy — drawn from review themes, not direct quote |
+| All 9 service page bodies | data/craft-catalog/service-pages.tsx | Generated from trade knowledge + review job-type mentions |
+| All 9 programs card descriptions | data/programs.tsx | Tightened from service page copy |
+| All 4 accordion step sequences | lib/constants/AccordionItems.tsx | Process steps drawn from review descriptions of how Tom's team works |
+| All 8 FAQs | app/general-faqs/page.tsx | Trade-standard questions with O'Connor-specific answers |
+| Service area descriptions | app/service-areas/page.tsx | Localized by area housing stock and geography |
+| Blog post titles + excerpts | app/blog/page.tsx | Placeholder only — all flagged TODO |
+| Gallery job card titles | app/gallery/page.tsx | Placeholder only — all flagged TODO |
 
----
-
-### 8. Service Areas (`app/service-areas/page.tsx`) — **NEW PAGE**
-**Source:** Reference site had a dedicated service area section. PM serves 3 distinct regions with very different housing stock.
-
-**Decision:** Built one page with 3 anchor-linked sections (Brooklyn, Queens, Nassau County). Each section has: a localized description, 3 specific callouts, full neighborhood list.
-
-**Generated:** All copy — written to be locally specific (brownstones in Brooklyn, long sewer runs in Nassau, mixed housing types in Queens). All factual details are consistent with PM's actual service area.
-
----
-
-### 9. Blog (`app/blog/page.tsx`) — **NEW PAGE**
-**Source:** Reference site had a blog. PM has none.
-
-**Decision:** Built a placeholder blog index with 6 sample posts. Post titles and excerpts are real content angles Pipe Monkeys could use — all relevant to their actual services and customer pain points.
-
-**TODO flagged:** All posts are placeholders. Client needs to: (a) decide if they want a blog, (b) wire up CMS or create individual post pages if yes.
-
----
-
-## Navigation Changes
-
-**Template had:** 7-item mega-dropdown NCCER nav (CraftPro, Explore, Crafts, Credentials, Career Pathways, Research, Our Impact, About Us)
-
-**PM nav:** Home | Services | FAQs | Contact — 4 flat items, no dropdowns. Matches Apex Roofing Pro's lean 4-item pattern.
-
-**Topnav:** Replaced NCCER utility links (Find My NCCER Number, Take Module Test) with PM phone number bar: "(718) 749-1830 — Same-Day Service Available"
-
-**Footer:** Replaced NCCER widgets (Donation, Mailing List) with PM Contact Info + Service Areas summary
+All Testimonial quotes are real reviews sourced from Yelp (Marta R., Willie L.) and Nextdoor (S.Q., R.O.).
 
 ---
 
@@ -129,39 +136,15 @@ Pipe Monkeys' existing site is a **single-page WordPress build** — no subpages
 
 | Item | File | Notes |
 |------|------|-------|
-| Hero image/video | `components/custom/Hero.tsx` | Replace placeholder with PM photo |
-| Logo files | `Topnav.tsx`, `Footer.tsx` | Replace `/logos/logo-94.svg` and `/logos/logo-long.svg` |
-| Gallery photos | `app/gallery/page.tsx` | All 6 before/after pairs need real job photos |
-| Difference section photo | `components/custom/Difference.tsx` | Job site or team photo needed |
-| Announcements photo | `components/custom/Announcements.tsx` | One team/job site photo |
-| Contact form | `app/contact-us/page.tsx` | Verify HubSpot form ID or replace with preferred form |
-| Social media links | `components/custom/Footer.tsx` | Verify actual Facebook/Instagram URLs |
-| Business hours | `components/custom/Footer.tsx` | Mon–Sat 7am–8pm is a placeholder — confirm with client |
-| Review count/rating | `components/custom/Difference.tsx` | "4.9★" — verify current rating |
-| Blog decision | `app/blog/page.tsx` | Client to decide: live blog or remove page |
-| Additional testimonials | `components/custom/Testimonial.tsx` | Currently 1 quote — request more from client |
+| Hero image or video | components/custom/Hero.tsx | Replace placeholder with O'Connor & Sons job site or team photo |
+| Difference section photo | components/custom/Difference.tsx | Replace /images/IMG_9750 with O'Connor & Sons panel or team photo |
+| Announcements section photo | components/custom/Announcements.tsx | Replace /images/IMG_9688 with relevant job site photo |
+| Accordion item images (×4) | lib/constants/AccordionItems.tsx | All 4 use /images/IMG_9688 placeholder — replace with trade-specific photos |
+| About Us page photo | data/channel/oconnor-sons.tsx | flexFeature.image slot — needs client photo |
+| Gallery photos (×4) | app/gallery/page.tsx | All 4 gallery cards are placeholders — replace with real job photos |
+| Social media URLs | components/custom/Footer.tsx | Yelp link present; Facebook/Instagram/YouTube slots need real URLs or removal |
+| Google Maps embed | app/contact-us/page.tsx | Confirm iframe src points to correct 849 Clara Drive embed URL |
+| Blog content | app/blog/page.tsx | 6 placeholder posts — replace with real articles or approve generated stubs |
+| Yelp review link | components/custom/Difference.tsx | Yelp URL hard-coded to /biz/oconnor-and-sons-electric-palo-alto — confirm this is correct slug |
+| Form backend | app/contact-us/page.tsx | Contact form needs real submission endpoint wired up |
 
----
-
-## Copy Generation Log
-
-All generated copy is marked below. Everything else is derived directly from pipemonkeys.com or is structural/navigational.
-
-**Generated (short):**
-- Homepage intro headline refinement
-- "How It Works" 3-step process in `Announcements.tsx`
-- Stats block labels in `Difference.tsx`
-- Blog post titles and excerpts (6 items) — placeholders only
-- Service area descriptions for Brooklyn, Queens, Nassau County in `service-areas/page.tsx`
-
-**Generated (micro-copy):**
-- CTA button labels throughout
-- Breadcrumbs
-- Sub-headings and section labels
-
-**Not generated — pulled from source:**
-- All service descriptions
-- All FAQ answers
-- Daniel Pipitone testimonial
-- Neighborhood lists
-- Phone number, pricing philosophy, cleanup guarantee language

@@ -28,7 +28,7 @@ export default function Announcements() {
 
         <div className="front-announcements__inner">
           <div className="sub-heading">How It Works</div>
-          <h3 className="h3">Fast, Clean, and Priced Up Front</h3>
+          <h3 className="h3">What to Expect When You Call</h3>
         </div>
 
         <div className="relative z-20 front-announcements__content">
@@ -49,7 +49,7 @@ export default function Announcements() {
                   backgroundColor: '#101d2b',
                 }}
               />
-              {/* [TODO: Replace with Pipe Monkeys team or job site photo] */}
+              {/* [TODO: Replace with O'Connor & Sons team or job site photo] */}
             </div>
           </div>
 
@@ -57,23 +57,22 @@ export default function Announcements() {
           <div className="front-announcements__text">
             <div className="content-entry">
               <p>
-                Every call starts the same way: we show up, diagnose the problem in front
-                of you, explain exactly what needs to happen, and give you the price before
-                a single tool touches your drain. No guessing, no surprise invoices — just
-                a straight answer and a plan.
+                When you call O&apos;Connor &amp; Sons, you get a real conversation — not
+                a call center. Tom and his team respond quickly, arrive when they say they
+                will, and take the time to understand your situation before recommending
+                anything.
               </p>
               <p>
-                <strong>Step 1: Diagnose.</strong> Our tech assesses the blockage and
-                identifies the right tool for the job — snake, auger, or hydro jet.
+                <strong>Step 1: Respond.</strong> We answer calls promptly and schedule
+                around you. Same-day service is often available.
               </p>
               <p>
-                <strong>Step 2: Approve &amp; Clear.</strong> You get the price first.
-                Once you&apos;re ready, we go to work. Most jobs are done in under an hour.
+                <strong>Step 2: Diagnose &amp; Explain.</strong> We assess the situation,
+                identify the root cause, and explain what we found — before any work begins.
               </p>
               <p>
-                <strong>Step 3: Confirm &amp; Clean Up.</strong> We test the flow in front
-                of you, clean the work area, and don&apos;t leave until the drain is
-                fully clear.
+                <strong>Step 3: Fix It Right.</strong> We complete the work properly,
+                permit when required, and confirm everything is working before we leave.
               </p>
             </div>
 

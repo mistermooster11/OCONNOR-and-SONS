@@ -4,241 +4,154 @@ export type ServiceNavItem = { href: string; label: string };
 
 export type ServicePageData = {
   title: string;
-  /** Fallback background color while TODO image is pending */
   bgColor: string;
   navItems: ServiceNavItem[];
-  /** Short intro paragraph shown in CraftOverview left column */
   overviewContent: ReactNode;
-  /** Quick links shown in CraftOverview right column */
   overviewQuickLinks: { label: string; href: string }[];
-  /** Middle content sections rendered between overview and related services */
   sections: { id: string; heading: string; content: ReactNode }[];
-  /** "Related Services" links at page bottom */
   relatedServices: { label: string; href: string }[];
 };
 
 export const servicePages: Record<string, ServicePageData> = {
 
-  /* ─── MAIN SEWER LINES ─────────────────────────────────────────────────── */
-  "main-sewer-lines": {
-    title: "Main Sewer Lines",
+  /* ─── ELECTRICAL TROUBLESHOOTING ───────────────────────────────────────── */
+  "electrical-troubleshooting": {
+    title: "Electrical Troubleshooting",
     bgColor: "#101d2b",
     navItems: [
-      { href: "#overview",          label: "Overview"          },
-      { href: "#when_you_need_it",  label: "When You Need It"  },
-      { href: "#our_process",       label: "Our Process"       },
-      { href: "#related_services",  label: "Related Services"  },
+      { href: "#overview",         label: "Overview"         },
+      { href: "#when_you_need_it", label: "When You Need It" },
+      { href: "#our_process",      label: "Our Process"      },
+      { href: "#related_services", label: "Related Services" },
     ],
     overviewContent: (
       <>
         <p>
-          When the main sewer line backs up, every drain in the building stops
-          working. These blockages — caused by root intrusion, grease and scale
-          buildup, or decades of accumulation — require industrial-grade equipment
-          that goes beyond what a standard snake can handle.
+          Electrical problems rarely announce themselves clearly. A tripped
+          breaker that keeps resetting, lights that flicker unexpectedly, an
+          outlet that stops working for no obvious reason — these symptoms point
+          to a root cause that needs to be found, not just reset or replaced.
         </p>
         <p>
-          Pipe Monkeys techs clear main sewer lines in Brooklyn brownstones, Queens
-          multi-family buildings, and Nassau County homes with long underground
-          runs — every single day.
+          O&rsquo;Connor &amp; Sons Electric are experts in troubleshooting
+          electrical issues. With over 30 years of experience and a
+          European-trained background in electrical diagnostics, Tom and his
+          team find the actual source of the problem — and fix it right the
+          first time.
         </p>
       </>
     ),
     overviewQuickLinks: [
-      { label: "Call (718) 749-1830", href: "tel:7187491830"   },
-      { label: "Contact Us Online",   href: "/contact-us"      },
-    ],
-    sections: [
-      {
-        id: "when_you_need_it",
-        heading: "When Do You Need Main Line Service?",
-        content: (
-          <>
-            <p>
-              Multiple drains backing up at once is the clearest sign your main
-              sewer line is blocked — not just a single fixture. Other warning signs
-              include gurgling sounds from drains, slow flow on every floor of the
-              building, sewage odors, or water backing up in the tub when you flush
-              the toilet.
-            </p>
-            <p>
-              These symptoms don&rsquo;t clear on their own. The longer a main line
-              blockage sits, the higher the risk of a sewage backup into the basement
-              or lower-level units. Call us as soon as these signs appear.
-            </p>
-          </>
-        ),
-      },
-      {
-        id: "our_process",
-        heading: "How We Handle It",
-        content: (
-          <>
-            <p>
-              <strong>Step 1 — Diagnose.</strong> We assess the situation before
-              any tools go in. For main line jobs, we confirm the blockage location
-              and severity and recommend a camera inspection when the cause isn&rsquo;t
-              obvious.
-            </p>
-            <p>
-              <strong>Step 2 — Quote Upfront.</strong> You get the price before
-              we start — no surprises. What we quote is what you pay.
-            </p>
-            <p>
-              <strong>Step 3 — Clear It.</strong> We use industrial electric cutters
-              and hydro jetting equipment to break through and flush out root masses,
-              grease plugs, and heavy scale. We don&rsquo;t leave until flow is fully
-              restored.
-            </p>
-            <p>
-              <strong>Step 4 — Confirm and Clean Up.</strong> We run water through
-              to verify full flow, show you the result, and leave the area cleaner
-              than we found it. Shoe covers and drop cloths on every job.
-            </p>
-          </>
-        ),
-      },
-    ],
-    relatedServices: [
-      { label: "Camera Inspection",         href: "/craft-catalog/camera-inspection"    },
-      { label: "Hydro Jetting",             href: "/craft-catalog/hydro-jetting"        },
-      { label: "Drain Snaking & Augering",  href: "/craft-catalog/drain-snaking"        },
-      { label: "Multi-Unit Buildings",      href: "/craft-catalog/multi-unit-buildings" },
-    ],
-  },
-
-  /* ─── KITCHEN SINKS ────────────────────────────────────────────────────── */
-  "kitchen-sinks": {
-    title: "Kitchen Sinks",
-    bgColor: "#101d2b",
-    navItems: [
-      { href: "#overview",          label: "Overview"         },
-      { href: "#when_you_need_it",  label: "When You Need It" },
-      { href: "#our_process",       label: "Our Process"      },
-      { href: "#related_services",  label: "Related Services" },
-    ],
-    overviewContent: (
-      <>
-        <p>
-          Grease, food debris, and soap scum are the three main kitchen drain
-          killers — and in New York City buildings with heavy daily use, they
-          build up faster than anywhere else. A slow kitchen sink almost always
-          means the problem is already significant inside the pipe.
-        </p>
-        <p>
-          Pipe Monkeys clears kitchen drains across Brooklyn, Queens, and Nassau
-          County using professional snakes and hydro jetting, depending on the
-          severity. No mess, no chemical damage to pipes.
-        </p>
-      </>
-    ),
-    overviewQuickLinks: [
-      { label: "Call (718) 749-1830", href: "tel:7187491830" },
+      { label: "Call (650) 740-1121", href: "tel:6507401121" },
       { label: "Contact Us Online",   href: "/contact-us"    },
     ],
     sections: [
       {
         id: "when_you_need_it",
-        heading: "When Do You Need Kitchen Drain Service?",
+        heading: "When Do You Need Electrical Troubleshooting?",
         content: (
           <>
             <p>
-              A kitchen drain that drains slowly, backs up under the sink, or
-              emits a persistent odor is telling you grease or debris has
-              accumulated in the line. In buildings with garbage disposals, the
-              buildup accelerates — and chemical drain cleaners can actually make
-              the long-term problem worse by softening older pipes.
+              Call us when you notice: breakers tripping repeatedly without an
+              obvious overload; outlets or switches that have stopped working;
+              lights flickering or dimming when other appliances run; burning
+              smells near outlets, panels, or fixtures; or any circuit behavior
+              that seems inconsistent or unexplained.
             </p>
             <p>
-              Don&rsquo;t wait until the sink stops draining completely. Early
-              intervention is cheaper, faster, and keeps standing water and odors
-              out of your kitchen.
+              Electrical issues that seem minor can indicate a more serious
+              underlying problem — overloaded circuits, deteriorating wiring, or
+              loose connections that create fire risk. Early diagnosis is always
+              the right call.
             </p>
           </>
         ),
       },
       {
         id: "our_process",
-        heading: "How We Handle It",
+        heading: "How We Diagnose It",
         content: (
           <>
             <p>
-              <strong>Step 1 — Diagnose.</strong> We look at the sink, check
-              under the cabinet, and assess how far the blockage has progressed.
-              We&rsquo;ll tell you whether snaking or jetting is the right call
-              and why.
+              <strong>Step 1 — Listen.</strong> We start by understanding the
+              symptom pattern — when it happens, what was running, how long it&rsquo;s
+              been occurring. Patterns point to causes.
             </p>
             <p>
-              <strong>Step 2 — Quote Upfront.</strong> Price is confirmed before
-              any work begins. No bait-and-switch.
+              <strong>Step 2 — Inspect.</strong> We check the panel, the affected
+              circuit, and the fixtures or outlets involved. We use professional
+              testing equipment to read voltage, continuity, and load — not just
+              visual inspection.
             </p>
             <p>
-              <strong>Step 3 — Clear It.</strong> For grease buildup, hydro
-              jetting scrubs the pipe walls clean — reducing the chance of a
-              repeat clog. For straightforward blockages, a professional electric
-              snake breaks it up fast and gets the line flowing.
+              <strong>Step 3 — Explain.</strong> Before any repair begins, we
+              explain what we found, why it happened, and what the fix involves.
+              No surprise charges. You approve the work before we proceed.
             </p>
             <p>
-              <strong>Step 4 — Test and Clean Up.</strong> We run hot water to
-              confirm full drainage and wipe down the work area before we leave.
+              <strong>Step 4 — Fix It Properly.</strong> We repair the root
+              cause, not just the symptom. We test the circuit thoroughly before
+              leaving to confirm the issue is fully resolved.
             </p>
           </>
         ),
       },
     ],
     relatedServices: [
-      { label: "Hydro Jetting",            href: "/craft-catalog/hydro-jetting"       },
-      { label: "Drain Snaking & Augering", href: "/craft-catalog/drain-snaking"       },
-      { label: "Main Sewer Lines",         href: "/craft-catalog/main-sewer-lines"    },
-      { label: "Multi-Unit Buildings",     href: "/craft-catalog/multi-unit-buildings"},
+      { label: "Panel & Subpanel Upgrades",     href: "/craft-catalog/panel-subpanel-upgrades"      },
+      { label: "Outlet & Switch Repair",         href: "/craft-catalog/outlet-switch-repair"          },
+      { label: "Residential Electrical",         href: "/craft-catalog/residential-electrical"        },
+      { label: "Lighting Installation",          href: "/craft-catalog/lighting-installation"         },
     ],
   },
 
-  /* ─── TUBS & SHOWERS ───────────────────────────────────────────────────── */
-  "tubs-and-showers": {
-    title: "Tubs & Showers",
+  /* ─── PANEL & SUBPANEL UPGRADES ────────────────────────────────────────── */
+  "panel-subpanel-upgrades": {
+    title: "Panel & Subpanel Upgrades",
     bgColor: "#101d2b",
     navItems: [
-      { href: "#overview",          label: "Overview"         },
-      { href: "#when_you_need_it",  label: "When You Need It" },
-      { href: "#our_process",       label: "Our Process"      },
-      { href: "#related_services",  label: "Related Services" },
+      { href: "#overview",         label: "Overview"         },
+      { href: "#when_you_need_it", label: "When You Need It" },
+      { href: "#our_process",      label: "Our Process"      },
+      { href: "#related_services", label: "Related Services" },
     ],
     overviewContent: (
       <>
         <p>
-          Hair, soap residue, and mineral deposits accumulate silently inside tub
-          and shower drains until you&rsquo;re standing in ankle-deep water. The
-          fix is straightforward — but done wrong, it damages tile, p-traps, or
-          the drain body itself.
+          An undersized or aging electrical panel is one of the most common
+          limiting factors in older Palo Alto homes and commercial properties.
+          Whether you need a full 200-amp service upgrade, a subpanel added to
+          a detached structure, or a replacement of a failing panel, O&rsquo;Connor
+          &amp; Sons handles it with permits and inspection sign-off.
         </p>
         <p>
-          Pipe Monkeys removes bathroom drain blockages cleanly and carefully, with
-          shoe covers and drop cloths on every job. Your bathroom goes back to normal
-          — or better.
+          Customers have trusted us with panel replacements and subpanel
+          installations across the Palo Alto area for over 30 years. We pull
+          all required permits and coordinate city inspections.
         </p>
       </>
     ),
     overviewQuickLinks: [
-      { label: "Call (718) 749-1830", href: "tel:7187491830" },
+      { label: "Call (650) 740-1121", href: "tel:6507401121" },
       { label: "Contact Us Online",   href: "/contact-us"    },
     ],
     sections: [
       {
         id: "when_you_need_it",
-        heading: "When Do You Need Tub & Shower Drain Service?",
+        heading: "When Do You Need a Panel Upgrade?",
         content: (
           <>
             <p>
-              Standing water in the tub, a drain that takes minutes to clear after
-              a shower, or a persistent musty smell from the drain are all signs of a
-              buildup that a plunger won&rsquo;t fix. In older NYC buildings, mineral
-              deposits from hard water compound the problem — narrowing pipes gradually
-              until they nearly close off.
+              Signs your panel needs attention: breakers that trip frequently
+              under normal loads; no room to add new circuits; a panel that
+              uses fuses instead of breakers; you&rsquo;re adding an EV charger,
+              hot tub, or major appliance that requires a dedicated circuit; or
+              an inspector or insurer has flagged the current panel.
             </p>
             <p>
-              If you&rsquo;ve already tried drain cleaning solutions without results,
-              the clog is past the point of DIY. Call us.
+              Subpanels are the right solution when you need to extend service
+              to a garage, ADU, workshop, or addition without running circuits
+              all the way back to the main panel.
             </p>
           </>
         ),
@@ -249,464 +162,631 @@ export const servicePages: Record<string, ServicePageData> = {
         content: (
           <>
             <p>
-              <strong>Step 1 — Diagnose.</strong> We assess the drain type, check the
-              p-trap and trap arm for accessibility, and confirm the blockage is in
-              the drain line — not the main stack.
+              <strong>Step 1 — Assess.</strong> We evaluate your current panel
+              capacity, the service entrance, and your current and future load
+              requirements. We recommend the right panel size for your actual
+              needs.
             </p>
             <p>
-              <strong>Step 2 — Quote Upfront.</strong> Price confirmed before we
-              touch anything. You approve — then we work.
+              <strong>Step 2 — Permit.</strong> We pull all necessary permits
+              from the City of Palo Alto. No shortcuts on panel work.
             </p>
             <p>
-              <strong>Step 3 — Clear It.</strong> We use the right cable gauge for
-              the pipe size — no forcing, no guessing. The blockage comes out cleanly
-              without damaging the drain body or tile surround.
+              <strong>Step 3 — Install.</strong> We replace or upgrade the
+              panel, reroute circuits as needed, label everything clearly, and
+              restore service as quickly as possible.
             </p>
             <p>
-              <strong>Step 4 — Test and Clean Up.</strong> We run the shower and
-              confirm full drainage before leaving. Shoe covers and drop cloths mean
-              your bathroom floor stays clean throughout.
+              <strong>Step 4 — Inspection.</strong> We coordinate the city
+              inspection and make any required corrections before the permit
+              closes. Work isn&rsquo;t done until it passes.
             </p>
           </>
         ),
       },
     ],
     relatedServices: [
-      { label: "Drain Snaking & Augering", href: "/craft-catalog/drain-snaking"    },
-      { label: "Toilets",                  href: "/craft-catalog/toilets"           },
-      { label: "Hydro Jetting",            href: "/craft-catalog/hydro-jetting"     },
-      { label: "Kitchen Sinks",            href: "/craft-catalog/kitchen-sinks"     },
+      { label: "Electrical Troubleshooting",    href: "/craft-catalog/electrical-troubleshooting"   },
+      { label: "EV Charger & Battery Systems",  href: "/craft-catalog/ev-charger-battery-systems"   },
+      { label: "Remodeling & New Construction", href: "/craft-catalog/remodeling-new-construction"  },
+      { label: "Commercial Electrical",         href: "/craft-catalog/commercial-electrical"         },
     ],
   },
 
-  /* ─── TOILETS ──────────────────────────────────────────────────────────── */
-  "toilets": {
-    title: "Toilets",
+  /* ─── RESIDENTIAL ELECTRICAL ───────────────────────────────────────────── */
+  "residential-electrical": {
+    title: "Residential Electrical",
     bgColor: "#101d2b",
     navItems: [
-      { href: "#overview",          label: "Overview"         },
-      { href: "#when_you_need_it",  label: "When You Need It" },
-      { href: "#our_process",       label: "Our Process"      },
-      { href: "#related_services",  label: "Related Services" },
+      { href: "#overview",         label: "Overview"         },
+      { href: "#when_you_need_it", label: "When You Need It" },
+      { href: "#our_process",      label: "Our Process"      },
+      { href: "#related_services", label: "Related Services" },
     ],
     overviewContent: (
       <>
         <p>
-          Stubborn toilet clogs — including foreign objects, excessive paper, and
-          blockages too deep for a plunger to reach — require the right auger and
-          the right technique. Forcing the wrong tool causes damage; calling too
-          late turns a simple clog into a sewage backup.
+          O&rsquo;Connor &amp; Sons Electric has been the go-to residential
+          electrician for Palo Alto homeowners for over 30 years. We handle
+          everything from single-circuit repairs to whole-home rewires, and we
+          treat every home with the same attention to detail — big or small.
         </p>
         <p>
-          Pipe Monkeys handles toilet clogs fast, without splash, and without damage
-          to the toilet body or floor. We test the flush before leaving.
+          Family-owned. Licensed. Local. We know Palo Alto homes — the older
+          construction, the ADU additions, the remodeled Eichlers — and we know
+          how to work in them correctly.
         </p>
       </>
     ),
     overviewQuickLinks: [
-      { label: "Call (718) 749-1830", href: "tel:7187491830" },
+      { label: "Call (650) 740-1121", href: "tel:6507401121" },
       { label: "Contact Us Online",   href: "/contact-us"    },
     ],
     sections: [
       {
         id: "when_you_need_it",
-        heading: "When Do You Need Toilet Clog Service?",
+        heading: "Residential Electrical Services We Provide",
         content: (
           <>
             <p>
-              If a plunger hasn&rsquo;t resolved the clog after a few attempts, the
-              blockage is past the trap — deeper in the drain line or in an object
-              that can&rsquo;t be pushed through. Common culprits include: children&rsquo;s
-              toys, hygiene products, excessive wipes (even &ldquo;flushable&rdquo; ones),
-              and buildup at the horn of older toilets.
+              We handle all standard residential electrical needs: adding or
+              moving circuits, installing outlets and switches, wiring for new
+              appliances, upgrading panels and subpanels, installing lighting
+              fixtures and ceiling fans, troubleshooting unexplained electrical
+              problems, and rewiring older homes that still have outdated wiring.
             </p>
             <p>
-              A partial clog that flushes slowly is also worth addressing before it
-              becomes a full backup. Call us before the situation escalates.
+              We also work with homeowners during home sales — addressing
+              electrical items flagged on inspection reports and providing
+              documentation of work completed for disclosure purposes.
             </p>
           </>
         ),
       },
       {
         id: "our_process",
-        heading: "How We Handle It",
+        heading: "What to Expect",
         content: (
           <>
             <p>
-              <strong>Step 1 — Diagnose.</strong> We determine whether the clog is
-              in the toilet trap, the flange connection, or deeper in the drain line.
-              That determines the right tool.
+              <strong>Responsive Scheduling.</strong> Tom and his team are known
+              for responding quickly and arriving when they say they will. Many
+              customers have reached us on short notice and been helped the same
+              day or next.
             </p>
             <p>
-              <strong>Step 2 — Quote Upfront.</strong> You get a clear price before
-              any work begins.
+              <strong>Honest Assessment.</strong> We diagnose the situation and
+              tell you what we find — including what doesn&rsquo;t need to be
+              fixed. We don&rsquo;t upsell work that isn&rsquo;t necessary.
             </p>
             <p>
-              <strong>Step 3 — Clear It.</strong> We use a professional closet auger
-              to retrieve the object or break up the blockage without scratching the
-              bowl or damaging the internal glaze. We&rsquo;ve cleared everything from
-              toys to full pipe obstructions.
-            </p>
-            <p>
-              <strong>Step 4 — Test and Clean Up.</strong> Multiple test flushes
-              confirm the line is clear. We wipe down and leave the bathroom exactly
-              as we found it.
+              <strong>Clean Work.</strong> We respect your home. We work
+              carefully, clean up after ourselves, and leave things better than
+              we found them. Our customers notice — it&rsquo;s one of the most
+              common things they mention in reviews.
             </p>
           </>
         ),
       },
     ],
     relatedServices: [
-      { label: "Tubs & Showers",           href: "/craft-catalog/tubs-and-showers" },
-      { label: "Drain Snaking & Augering", href: "/craft-catalog/drain-snaking"    },
-      { label: "Main Sewer Lines",         href: "/craft-catalog/main-sewer-lines" },
-      { label: "Camera Inspection",        href: "/craft-catalog/camera-inspection"},
+      { label: "Electrical Troubleshooting",   href: "/craft-catalog/electrical-troubleshooting"   },
+      { label: "Panel & Subpanel Upgrades",    href: "/craft-catalog/panel-subpanel-upgrades"       },
+      { label: "Lighting Installation",        href: "/craft-catalog/lighting-installation"         },
+      { label: "Outlet & Switch Repair",       href: "/craft-catalog/outlet-switch-repair"          },
     ],
   },
 
-  /* ─── HYDRO JETTING ────────────────────────────────────────────────────── */
-  "hydro-jetting": {
-    title: "Hydro Jetting",
+  /* ─── COMMERCIAL ELECTRICAL ────────────────────────────────────────────── */
+  "commercial-electrical": {
+    title: "Commercial Electrical",
     bgColor: "#101d2b",
     navItems: [
-      { href: "#overview",          label: "Overview"         },
-      { href: "#when_you_need_it",  label: "When You Need It" },
-      { href: "#our_process",       label: "Our Process"      },
-      { href: "#related_services",  label: "Related Services" },
+      { href: "#overview",         label: "Overview"         },
+      { href: "#when_you_need_it", label: "When You Need It" },
+      { href: "#our_process",      label: "Our Process"      },
+      { href: "#related_services", label: "Related Services" },
     ],
     overviewContent: (
       <>
         <p>
-          A snake clears a path through a clog. Hydro jetting actually scrubs the
-          interior pipe walls — using high-pressure water to blast away grease, scale,
-          mineral deposits, and root fragments from the inside out.
+          O&rsquo;Connor &amp; Sons Electric serves commercial clients
+          throughout Palo Alto and the Peninsula — offices, retail spaces,
+          small businesses, and multi-unit properties. Commercial electrical
+          work requires a licensed contractor who understands load calculations,
+          code compliance, and the urgency of keeping your business operational.
         </p>
         <p>
-          If the same drain has backed up multiple times in the past year, jetting is
-          the long-term fix. Pipe Monkeys offers hydro jetting for kitchen lines, main
-          sewer lines, and commercial buildings throughout Brooklyn, Queens, and Nassau
-          County.
+          We work efficiently in occupied commercial spaces, coordinate with
+          building management, and document our work thoroughly.
         </p>
       </>
     ),
     overviewQuickLinks: [
-      { label: "Call (718) 749-1830", href: "tel:7187491830" },
+      { label: "Call (650) 740-1121", href: "tel:6507401121" },
       { label: "Contact Us Online",   href: "/contact-us"    },
     ],
     sections: [
       {
         id: "when_you_need_it",
-        heading: "When Is Hydro Jetting the Right Call?",
+        heading: "Commercial Electrical Services We Provide",
         content: (
           <>
             <p>
-              Hydro jetting is the right call when: a drain has recurring clogs despite
-              regular snaking; there is confirmed grease buildup in a restaurant or
-              commercial kitchen line; a camera inspection reveals significant scale or
-              root intrusion that a cutter alone won&rsquo;t fully resolve; or a
-              landlord wants a clean baseline before a new tenant moves in.
+              We handle tenant improvement electrical work, panel and service
+              upgrades for commercial buildings, lighting installation and
+              retrofits, dedicated circuits for equipment, outlet and switch
+              installation, troubleshooting electrical faults, and electrical
+              work for multi-unit residential properties.
             </p>
             <p>
-              Jetting is not the right first tool for every job — we&rsquo;ll always
-              recommend it when it&rsquo;s warranted, and only when it&rsquo;s warranted.
+              Property managers and business owners on the Peninsula have relied
+              on O&rsquo;Connor &amp; Sons for decades. We understand the
+              scheduling constraints of occupied commercial spaces and work to
+              minimize disruption.
             </p>
           </>
         ),
       },
       {
         id: "our_process",
-        heading: "How We Handle It",
+        heading: "Working With Commercial Clients",
         content: (
           <>
             <p>
-              <strong>Step 1 — Camera First (Recommended).</strong> For main line
-              jetting, we run a camera to confirm the pipe is structurally sound before
-              introducing high pressure. Jetting a cracked or collapsed pipe makes the
-              problem worse.
+              <strong>Responsive and Direct.</strong> When something stops
+              working in a commercial building, downtime costs money. We respond
+              promptly and communicate clearly throughout the job.
             </p>
             <p>
-              <strong>Step 2 — Quote Upfront.</strong> Price confirmed before we start.
+              <strong>Code-Compliant Work.</strong> All commercial electrical
+              work is performed to code and permitted where required. We
+              coordinate inspections and provide complete documentation.
             </p>
             <p>
-              <strong>Step 3 — Jet It.</strong> We feed the jetting hose into the
-              clean-out or access point and work the nozzle through the line at up to
-              4,000 PSI — forward and backward — until the walls are clean and flow
-              is fully restored.
-            </p>
-            <p>
-              <strong>Step 4 — Confirm.</strong> We run water to verify full flow
-              and, on main line jobs, can run a post-jet camera to show you the results.
+              <strong>Multi-Property Experience.</strong> We regularly work with
+              property owners managing multiple buildings in the area. Repeat
+              clients who need consistency and reliability call us first.
             </p>
           </>
         ),
       },
     ],
     relatedServices: [
-      { label: "Camera Inspection",        href: "/craft-catalog/camera-inspection"   },
-      { label: "Main Sewer Lines",         href: "/craft-catalog/main-sewer-lines"    },
-      { label: "Kitchen Sinks",            href: "/craft-catalog/kitchen-sinks"       },
-      { label: "Multi-Unit Buildings",     href: "/craft-catalog/multi-unit-buildings"},
+      { label: "Panel & Subpanel Upgrades",     href: "/craft-catalog/panel-subpanel-upgrades"      },
+      { label: "Lighting Installation",         href: "/craft-catalog/lighting-installation"         },
+      { label: "Electrical Troubleshooting",    href: "/craft-catalog/electrical-troubleshooting"    },
+      { label: "Remodeling & New Construction", href: "/craft-catalog/remodeling-new-construction"   },
     ],
   },
 
-  /* ─── DRAIN SNAKING & AUGERING ─────────────────────────────────────────── */
-  "drain-snaking": {
-    title: "Drain Snaking & Augering",
+  /* ─── REMODELING & NEW CONSTRUCTION ────────────────────────────────────── */
+  "remodeling-new-construction": {
+    title: "Remodeling & New Construction",
     bgColor: "#101d2b",
     navItems: [
-      { href: "#overview",          label: "Overview"         },
-      { href: "#when_you_need_it",  label: "When You Need It" },
-      { href: "#our_process",       label: "Our Process"      },
-      { href: "#related_services",  label: "Related Services" },
+      { href: "#overview",         label: "Overview"         },
+      { href: "#when_you_need_it", label: "When You Need It" },
+      { href: "#our_process",      label: "Our Process"      },
+      { href: "#related_services", label: "Related Services" },
     ],
     overviewContent: (
       <>
         <p>
-          Drain snaking is the first-line tool for most residential clogs. Our
-          professional-grade electric snakes reach further, spin harder, and break
-          through blockages that hand snakes and drugstore augers can&rsquo;t touch.
+          Remodeling electrical work requires a licensed electrician who
+          understands the full scope of construction — not just the wiring in
+          isolation. O&rsquo;Connor &amp; Sons has spent decades wiring kitchen
+          remodels, bathroom renovations, ADU additions, and full home
+          renovations across Palo Alto and the surrounding area.
         </p>
         <p>
-          Pipe Monkeys carries multiple cable sizes — from small bathroom drain cables
-          to full main-line cables — so the right tool is always on the truck when we
-          arrive.
+          We coordinate with your general contractor, pull the necessary
+          permits, and complete rough-in and finish electrical that passes
+          inspection on the first try.
         </p>
       </>
     ),
     overviewQuickLinks: [
-      { label: "Call (718) 749-1830", href: "tel:7187491830" },
+      { label: "Call (650) 740-1121", href: "tel:6507401121" },
       { label: "Contact Us Online",   href: "/contact-us"    },
     ],
     sections: [
       {
         id: "when_you_need_it",
-        heading: "When Do You Need Drain Snaking?",
+        heading: "What We Handle in Remodels",
         content: (
           <>
             <p>
-              Snaking is the right call for most single-drain clogs — kitchen sinks,
-              bathroom sinks, tubs, showers, and toilets where the blockage is localized.
-              It&rsquo;s also the first step for main line jobs before deciding whether
-              hydro jetting is needed.
+              Kitchen remodels — dedicated circuits for appliances, under-cabinet
+              lighting, island outlets, hood ventilation wiring. Bathroom
+              remodels — GFCI protection, exhaust fan wiring, heated floor
+              circuits. ADU and addition wiring — subpanels, new circuits, service
+              extensions. Whole-home rewires — replacing outdated wiring in older
+              Palo Alto homes to modern code.
             </p>
             <p>
-              If you&rsquo;ve tried a plunger or a hand snake without results, the
-              clog is past what consumer tools can reach. A professional cable gets
-              into the line, breaks up or retrieves the obstruction, and leaves the
-              drain fully open.
+              We&rsquo;ve identified dangerous wiring conditions during remodels
+              that previous contractors had missed or left unresolved. We flag
+              what we find and explain your options clearly before any additional
+              work begins.
             </p>
           </>
         ),
       },
       {
         id: "our_process",
-        heading: "How We Handle It",
+        heading: "How We Work in Remodels",
         content: (
           <>
             <p>
-              <strong>Step 1 — Select the Right Tool.</strong> Cable diameter matters.
-              We match the cable to the pipe size — forcing an oversized cable causes
-              damage; undersizing leaves the clog intact.
+              <strong>Permit Coordination.</strong> We pull all required
+              electrical permits and coordinate with the city for inspections.
+              Clean permit history is important for your home&rsquo;s value and
+              insurability.
             </p>
             <p>
-              <strong>Step 2 — Quote Upfront.</strong> You know the price before work
-              begins.
+              <strong>GC Coordination.</strong> We communicate directly with
+              your general contractor and schedule rough-in and trim-out work
+              around the construction sequence to keep your project moving.
             </p>
             <p>
-              <strong>Step 3 — Snake It.</strong> We feed the cable through the access
-              point (drain opening, clean-out, or trap access) and work through the
-              blockage until the line clears. If the cable hits something it can&rsquo;t
-              resolve, we&rsquo;ll tell you immediately — no pushing blind.
-            </p>
-            <p>
-              <strong>Step 4 — Test and Clean Up.</strong> Water runs to confirm full
-              drainage. Cable, debris, and equipment cleaned up before we leave.
+              <strong>Inspection Sign-Off.</strong> We stand behind our work.
+              Every remodel electrical job is completed to code and passes
+              inspection before we close the permit.
             </p>
           </>
         ),
       },
     ],
     relatedServices: [
-      { label: "Hydro Jetting",        href: "/craft-catalog/hydro-jetting"     },
-      { label: "Main Sewer Lines",     href: "/craft-catalog/main-sewer-lines"  },
-      { label: "Kitchen Sinks",        href: "/craft-catalog/kitchen-sinks"     },
-      { label: "Tubs & Showers",       href: "/craft-catalog/tubs-and-showers"  },
+      { label: "Panel & Subpanel Upgrades",  href: "/craft-catalog/panel-subpanel-upgrades"     },
+      { label: "Lighting Installation",      href: "/craft-catalog/lighting-installation"        },
+      { label: "Outlet & Switch Repair",     href: "/craft-catalog/outlet-switch-repair"         },
+      { label: "Smart Home Wiring",          href: "/craft-catalog/smart-home-wiring"            },
     ],
   },
 
-  /* ─── CAMERA INSPECTION ────────────────────────────────────────────────── */
-  "camera-inspection": {
-    title: "Camera Inspection",
+  /* ─── LIGHTING INSTALLATION ────────────────────────────────────────────── */
+  "lighting-installation": {
+    title: "Lighting Installation",
     bgColor: "#101d2b",
     navItems: [
-      { href: "#overview",          label: "Overview"         },
-      { href: "#when_you_need_it",  label: "When You Need It" },
-      { href: "#our_process",       label: "Our Process"      },
-      { href: "#related_services",  label: "Related Services" },
+      { href: "#overview",         label: "Overview"         },
+      { href: "#when_you_need_it", label: "When You Need It" },
+      { href: "#our_process",      label: "Our Process"      },
+      { href: "#related_services", label: "Related Services" },
     ],
     overviewContent: (
       <>
         <p>
-          Before recommending a major repair, jetting service, or repeated snaking,
-          Pipe Monkeys can run a camera through your main line and show you exactly
-          what&rsquo;s in there — in real time. You see what we see: root intrusion,
-          grease buildup, pipe damage, or collapsed sections.
+          From track lighting and recessed cans to pendant fixtures and
+          under-cabinet lighting, O&rsquo;Connor &amp; Sons Electric installs
+          all types of residential and commercial lighting throughout Palo Alto.
+          Good lighting is part technical and part design — we help you get both
+          right.
         </p>
         <p>
-          No guesswork. No upsells on work you don&rsquo;t need.
+          We install new circuits where needed, run wiring through finished
+          walls when possible, and make sure every installation is safe,
+          clean, and properly supported.
         </p>
       </>
     ),
     overviewQuickLinks: [
-      { label: "Call (718) 749-1830", href: "tel:7187491830" },
+      { label: "Call (650) 740-1121", href: "tel:6507401121" },
       { label: "Contact Us Online",   href: "/contact-us"    },
     ],
     sections: [
       {
         id: "when_you_need_it",
-        heading: "When Do You Need a Camera Inspection?",
+        heading: "Lighting Work We Handle",
         content: (
           <>
             <p>
-              Camera inspection is the right call when: a main line blockage keeps
-              coming back after repeated snaking; you&rsquo;re buying or selling a
-              home and want to know the condition of the sewer line; a plumber or
-              contractor recommends an expensive repair and you want independent
-              verification; or we recommend hydro jetting and want to confirm the
-              pipe is structurally sound first.
+              Track lighting installation and relocation. Recessed lighting
+              (can lights) — new installs and retrofits. Pendant and chandelier
+              installation. Ceiling fan installation with or without existing
+              wiring. Under-cabinet lighting. Exterior lighting and security
+              lights. Landscape lighting circuits. Dimmer switch installation
+              and compatibility work.
             </p>
             <p>
-              It&rsquo;s also useful after a major clearing job — we can show you the
-              before-and-after results so you know the line is actually clean, not
-              just partially cleared.
+              We also troubleshoot lighting problems — flickering fixtures,
+              switches that don&rsquo;t control the right lights, and
+              incompatible dimmer/fixture combinations that cause buzzing or
+              early lamp failure.
             </p>
           </>
         ),
       },
       {
         id: "our_process",
-        heading: "How We Handle It",
+        heading: "How We Handle Lighting Projects",
         content: (
           <>
             <p>
-              <strong>Step 1 — Access the Line.</strong> We locate the clean-out or
-              access point nearest to the problem area. In buildings without a clean-out,
-              we&rsquo;ll advise on the best access option.
+              <strong>Right Circuit First.</strong> We assess whether your
+              existing wiring and circuit capacity can support the new
+              installation, or whether a new circuit is needed. We tell you
+              upfront.
             </p>
             <p>
-              <strong>Step 2 — Quote Upfront.</strong> Price confirmed before the
-              camera goes in.
+              <strong>Clean Installation.</strong> We fish wiring through
+              finished walls and ceilings where feasible to avoid unnecessary
+              drywall work. When walls must be opened, we patch cleanly.
             </p>
             <p>
-              <strong>Step 3 — Run the Camera.</strong> We feed a high-resolution
-              camera through the line and walk you through what we see — root masses,
-              grease, cracks, offsets, or clear pipe. You&rsquo;re watching the screen
-              in real time.
-            </p>
-            <p>
-              <strong>Step 4 — Report and Recommend.</strong> We tell you what we found
-              and what, if anything, needs to be done — with the footage to back it up.
-              You decide how to proceed. No pressure.
+              <strong>Tested and Confirmed.</strong> We test every switch,
+              dimmer, and fixture before we leave and make sure everything
+              works as expected.
             </p>
           </>
         ),
       },
     ],
     relatedServices: [
-      { label: "Hydro Jetting",            href: "/craft-catalog/hydro-jetting"       },
-      { label: "Main Sewer Lines",         href: "/craft-catalog/main-sewer-lines"    },
-      { label: "Drain Snaking & Augering", href: "/craft-catalog/drain-snaking"       },
-      { label: "Multi-Unit Buildings",     href: "/craft-catalog/multi-unit-buildings"},
+      { label: "Outlet & Switch Repair",        href: "/craft-catalog/outlet-switch-repair"        },
+      { label: "Residential Electrical",        href: "/craft-catalog/residential-electrical"       },
+      { label: "Remodeling & New Construction", href: "/craft-catalog/remodeling-new-construction"  },
+      { label: "Smart Home Wiring",             href: "/craft-catalog/smart-home-wiring"            },
     ],
   },
 
-  /* ─── MULTI-UNIT & COMMERCIAL BUILDINGS ────────────────────────────────── */
-  "multi-unit-buildings": {
-    title: "Multi-Unit & Commercial Buildings",
+  /* ─── OUTLET & SWITCH REPAIR ───────────────────────────────────────────── */
+  "outlet-switch-repair": {
+    title: "Outlet & Switch Repair",
     bgColor: "#101d2b",
     navItems: [
-      { href: "#overview",          label: "Overview"         },
-      { href: "#when_you_need_it",  label: "When You Need It" },
-      { href: "#our_process",       label: "Our Process"      },
-      { href: "#related_services",  label: "Related Services" },
+      { href: "#overview",         label: "Overview"         },
+      { href: "#when_you_need_it", label: "When You Need It" },
+      { href: "#our_process",      label: "Our Process"      },
+      { href: "#related_services", label: "Related Services" },
     ],
     overviewContent: (
       <>
         <p>
-          Pipe Monkeys works with brownstones, pre-war walk-ups, condos, co-ops,
-          and multi-family buildings across Brooklyn and Queens every day. Stack
-          drain issues, shared main lines, and building-wide backups are all in
-          our wheelhouse — and we know how to coordinate the job without creating
-          chaos for tenants.
+          Dead outlets, switches that don&rsquo;t work, tripped GFCI receptacles
+          that won&rsquo;t reset, and non-weatherproof outdoor outlets are among
+          the most common electrical service calls we handle. Most are resolved
+          quickly — often the same day.
         </p>
         <p>
-          Building managers and landlords: we show up on time, work efficiently,
-          and document the work. Call us directly at{" "}
-          <a href="tel:7187491830">(718) 749-1830</a>.
+          O&rsquo;Connor &amp; Sons responds fast and resolves the issue at the
+          source. Whether it&rsquo;s a loose connection, a failed device, or a
+          wiring problem upstream, we find it and fix it.
         </p>
       </>
     ),
     overviewQuickLinks: [
-      { label: "Call (718) 749-1830", href: "tel:7187491830" },
+      { label: "Call (650) 740-1121", href: "tel:6507401121" },
       { label: "Contact Us Online",   href: "/contact-us"    },
     ],
     sections: [
       {
         id: "when_you_need_it",
-        heading: "When Do You Need Multi-Unit Drain Service?",
+        heading: "Outlet & Switch Issues We Repair",
         content: (
           <>
             <p>
-              A building-wide backup — multiple units complaining of slow drains or
-              sewage odors simultaneously — almost always points to the main building
-              drain or the stack serving multiple floors. Individual unit clogs are
-              more straightforward; building-wide problems require more diagnostic
-              work to pinpoint whether the issue is in a branch line, the main stack,
-              or the building sewer itself.
+              Dead or intermittent outlets. GFCI outlets that won&rsquo;t reset
+              or trip frequently. Kitchen and bathroom outlets with no power.
+              Outdoor outlets that need weatherproof covers or GFCI protection.
+              Switches that control the wrong fixtures or no longer function.
+              Two-prong outlets that need updating. Dimmer switches that are
+              incompatible with LED fixtures.
             </p>
             <p>
-              We handle both. Whether it&rsquo;s a single-apartment drain or a main
-              line serving a six-unit brownstone, we bring the right equipment and
-              take the time to find the actual source of the problem.
+              We also install new outlets and switches — adding USB charging
+              outlets, moving outlet locations, adding switch legs for new
+              fixtures, and upgrading old 2-prong outlets to grounded 3-prong
+              with proper protection.
             </p>
           </>
         ),
       },
       {
         id: "our_process",
-        heading: "How We Handle It",
+        heading: "Fast and Thorough",
         content: (
           <>
             <p>
-              <strong>Step 1 — Coordinate with Management.</strong> We work directly
-              with the building manager or owner to understand which units are affected
-              and minimize disruption. If access to multiple units is needed, we schedule
-              efficiently.
+              <strong>Same-Day Response.</strong> Most outlet and switch issues
+              are handled quickly. Tom is known for responding fast — customers
+              have reached him on a Friday evening and had the problem resolved
+              the same night.
             </p>
             <p>
-              <strong>Step 2 — Diagnose the Root Cause.</strong> Building-wide symptoms
-              need root-cause diagnosis — we don&rsquo;t just snake the nearest drain.
-              Camera inspection is often recommended to locate the exact blockage in
-              the stack or main building drain.
+              <strong>Root Cause, Not Just the Symptom.</strong> A dead outlet
+              isn&rsquo;t always a failed device. We check the circuit, the
+              connections, and the panel before assuming a simple device swap
+              will hold.
             </p>
             <p>
-              <strong>Step 3 — Quote Upfront.</strong> Clear price before we start.
-              For complex jobs, we scope the work and confirm before proceeding.
-            </p>
-            <p>
-              <strong>Step 4 — Clear and Confirm.</strong> We use the right tool for
-              the blockage type — snake, industrial cutter, or hydro jet — confirm full
-              flow on all affected units, and document the work completed.
+              <strong>Clean Work.</strong> New outlets and switches are
+              installed level, with proper cover plates and no visible wire
+              gaps. We treat the detail of the finish installation as carefully
+              as the wiring itself.
             </p>
           </>
         ),
       },
     ],
     relatedServices: [
-      { label: "Camera Inspection",        href: "/craft-catalog/camera-inspection" },
-      { label: "Hydro Jetting",            href: "/craft-catalog/hydro-jetting"     },
-      { label: "Main Sewer Lines",         href: "/craft-catalog/main-sewer-lines"  },
-      { label: "Drain Snaking & Augering", href: "/craft-catalog/drain-snaking"     },
+      { label: "Electrical Troubleshooting",   href: "/craft-catalog/electrical-troubleshooting"   },
+      { label: "Lighting Installation",        href: "/craft-catalog/lighting-installation"         },
+      { label: "Residential Electrical",       href: "/craft-catalog/residential-electrical"        },
+      { label: "Smart Home Wiring",            href: "/craft-catalog/smart-home-wiring"             },
+    ],
+  },
+
+  /* ─── SMART HOME WIRING ─────────────────────────────────────────────────── */
+  "smart-home-wiring": {
+    title: "Smart Home Wiring",
+    bgColor: "#101d2b",
+    navItems: [
+      { href: "#overview",         label: "Overview"         },
+      { href: "#when_you_need_it", label: "When You Need It" },
+      { href: "#our_process",      label: "Our Process"      },
+      { href: "#related_services", label: "Related Services" },
+    ],
+    overviewContent: (
+      <>
+        <p>
+          Smart home systems require a licensed electrician who understands
+          both the electrical infrastructure and how smart devices interact
+          with it. O&rsquo;Connor &amp; Sons has experience with Vantage home
+          control systems and other smart home wiring projects throughout the
+          Palo Alto area.
+        </p>
+        <p>
+          We install the dedicated circuits, low-voltage wiring, and proper
+          grounding that smart home systems require to function reliably — and
+          troubleshoot existing smart home electrical issues when devices don&rsquo;t
+          behave as expected.
+        </p>
+      </>
+    ),
+    overviewQuickLinks: [
+      { label: "Call (650) 740-1121", href: "tel:6507401121" },
+      { label: "Contact Us Online",   href: "/contact-us"    },
+    ],
+    sections: [
+      {
+        id: "when_you_need_it",
+        heading: "Smart Home Electrical Work We Handle",
+        content: (
+          <>
+            <p>
+              Smart switch and dimmer installation (including compatibility
+              assessment with existing wiring). Vantage home control system
+              wiring. Low-voltage wiring for smart home hubs and controllers.
+              Dedicated circuits for smart home panels and equipment. Electrical
+              troubleshooting for smart devices that aren&rsquo;t working as
+              expected. Whole-home smart lighting circuit planning and
+              installation.
+            </p>
+            <p>
+              Silicon Valley homes have been early adopters of smart home
+              technology, and we&rsquo;ve worked on these systems for years. If
+              your smart home electrical isn&rsquo;t behaving, we can diagnose it.
+            </p>
+          </>
+        ),
+      },
+      {
+        id: "our_process",
+        heading: "Our Approach to Smart Home Work",
+        content: (
+          <>
+            <p>
+              <strong>Infrastructure First.</strong> Smart devices are only as
+              reliable as the electrical infrastructure behind them. We make
+              sure the wiring, grounding, and circuit capacity are correct before
+              any smart device goes in.
+            </p>
+            <p>
+              <strong>Compatibility Assessment.</strong> Not all smart switches
+              work with all wiring configurations. We assess your existing wiring
+              and recommend the right devices for your setup.
+            </p>
+            <p>
+              <strong>Tested and Working.</strong> We don&rsquo;t leave until
+              every device is installed correctly and functioning as designed.
+            </p>
+          </>
+        ),
+      },
+    ],
+    relatedServices: [
+      { label: "Lighting Installation",         href: "/craft-catalog/lighting-installation"         },
+      { label: "Outlet & Switch Repair",        href: "/craft-catalog/outlet-switch-repair"          },
+      { label: "EV Charger & Battery Systems",  href: "/craft-catalog/ev-charger-battery-systems"    },
+      { label: "Remodeling & New Construction", href: "/craft-catalog/remodeling-new-construction"   },
+    ],
+  },
+
+  /* ─── EV CHARGER & BATTERY SYSTEMS ─────────────────────────────────────── */
+  "ev-charger-battery-systems": {
+    title: "EV Charger & Battery Systems",
+    bgColor: "#101d2b",
+    navItems: [
+      { href: "#overview",         label: "Overview"         },
+      { href: "#when_you_need_it", label: "When You Need It" },
+      { href: "#our_process",      label: "Our Process"      },
+      { href: "#related_services", label: "Related Services" },
+    ],
+    overviewContent: (
+      <>
+        <p>
+          EV charger installation and home battery system wiring are two of the
+          most common electrical projects in Palo Alto today. Both require a
+          licensed electrician who understands load calculations, panel capacity,
+          and permit requirements — not just hardware installation.
+        </p>
+        <p>
+          O&rsquo;Connor &amp; Sons has experience with EV charger circuits and
+          battery backup systems including Tesla Powerwall troubleshooting and
+          remediation. We work on these systems correctly and to code.
+        </p>
+      </>
+    ),
+    overviewQuickLinks: [
+      { label: "Call (650) 740-1121", href: "tel:6507401121" },
+      { label: "Contact Us Online",   href: "/contact-us"    },
+    ],
+    sections: [
+      {
+        id: "when_you_need_it",
+        heading: "EV & Battery Work We Handle",
+        content: (
+          <>
+            <p>
+              Level 2 EV charger installation (240V dedicated circuit). NEMA
+              14-50 outlet installation for EV charging. Panel capacity
+              assessment for EV or battery load. Tesla Powerwall and home
+              battery system wiring and troubleshooting. Remediation of
+              improperly installed EV or battery systems. Permit coordination
+              for EV charger and battery system installations.
+            </p>
+            <p>
+              In a community where EV adoption is among the highest in the
+              country, we&rsquo;ve installed and serviced these systems many
+              times. We also fix problems left by installations that weren&rsquo;t
+              done correctly the first time.
+            </p>
+          </>
+        ),
+      },
+      {
+        id: "our_process",
+        heading: "How We Handle EV & Battery Installs",
+        content: (
+          <>
+            <p>
+              <strong>Panel Assessment First.</strong> Before any EV charger
+              goes in, we assess your panel&rsquo;s available capacity. If an
+              upgrade is needed, we tell you before work begins — not after.
+            </p>
+            <p>
+              <strong>Proper Permitting.</strong> EV charger and battery system
+              installations require permits in Palo Alto. We pull them and
+              coordinate inspections as part of every job.
+            </p>
+            <p>
+              <strong>Correct Installation.</strong> EV and battery systems
+              installed incorrectly create ongoing electrical problems. We do
+              it right — with the right wire gauge, breaker sizing, and
+              grounding for the load and system involved.
+            </p>
+          </>
+        ),
+      },
+    ],
+    relatedServices: [
+      { label: "Panel & Subpanel Upgrades",  href: "/craft-catalog/panel-subpanel-upgrades"     },
+      { label: "Residential Electrical",     href: "/craft-catalog/residential-electrical"       },
+      { label: "Smart Home Wiring",          href: "/craft-catalog/smart-home-wiring"            },
+      { label: "Electrical Troubleshooting", href: "/craft-catalog/electrical-troubleshooting"   },
     ],
   },
 };

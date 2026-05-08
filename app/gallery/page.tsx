@@ -8,43 +8,43 @@ import { useInView } from "framer-motion";
 const galleryItems = [
   {
     id: "gallery-1",
-    label: "Main Sewer Line — Crown Heights, Brooklyn",
-    beforeAlt: "Blocked main sewer line before clearing",
-    afterAlt:  "Clear main sewer line after hydro jetting",
-    // [TODO: Replace with real before/after job photos from Pipe Monkeys]
+    label: "Panel Upgrade — Palo Alto Residence",
+    beforeAlt: "Old electrical panel before upgrade",
+    afterAlt:  "New 200-amp panel installed and labeled",
+    // [TODO: Replace with real O'Connor & Sons job photos]
     before: "/images/IMG_9688-1024x682.jpg",
     after:  "/images/IMG_9750-1024x683.jpg",
-    category: "Main Sewer Line",
+    category: "Panel Upgrade",
   },
   {
     id: "gallery-2",
-    label: "Kitchen Drain — Astoria, Queens",
-    beforeAlt: "Grease-clogged kitchen drain before clearing",
-    afterAlt:  "Kitchen drain fully cleared and flowing",
-    // [TODO: Replace with real before/after job photos from Pipe Monkeys]
-    before: "/images/iStock-530983109-1.jpg",
+    label: "Track Lighting Install — Palo Alto Home",
+    beforeAlt: "Room before track lighting installation",
+    afterAlt:  "New track lighting installed and operational",
+    // [TODO: Replace with real O'Connor & Sons job photos]
+    before: "/images/IMG_9750-1024x683.jpg",
     after:  "/images/IMG_9688-1024x682.jpg",
-    category: "Kitchen Sink",
+    category: "Lighting",
   },
   {
     id: "gallery-3",
-    label: "Hydro Jetting — Nassau County Home",
-    beforeAlt: "Pipe interior with grease buildup",
-    afterAlt:  "Clean pipe interior after hydro jetting",
-    // [TODO: Replace with real before/after job photos from Pipe Monkeys]
-    before: "/images/IMG_9750-1024x683.jpg",
-    after:  "/images/iStock-530983109-1.jpg",
-    category: "Hydro Jetting",
+    label: "Weatherproof Outlet — Palo Alto Property",
+    beforeAlt: "Old outdoor outlet before replacement",
+    afterAlt:  "New weatherproof outdoor outlet installed",
+    // [TODO: Replace with real O'Connor & Sons job photos]
+    before: "/images/IMG_9688-1024x682.jpg",
+    after:  "/images/IMG_9750-1024x683.jpg",
+    category: "Outlet Work",
   },
   {
     id: "gallery-4",
-    label: "Tub Drain — Bay Ridge, Brooklyn",
-    beforeAlt: "Hair-clogged tub drain before clearing",
-    afterAlt:  "Tub drain cleared with no damage to tile",
-    // [TODO: Replace with real before/after job photos from Pipe Monkeys]
-    before: "/images/IMG_9688-1024x682.jpg",
-    after:  "/images/IMG_9750-1024x683.jpg",
-    category: "Tub & Shower",
+    label: "EV Charger Circuit — Menlo Park Garage",
+    beforeAlt: "Garage panel before EV charger circuit install",
+    afterAlt:  "NEMA 14-50 outlet installed for Level 2 EV charging",
+    // [TODO: Replace with real O'Connor & Sons job photos]
+    before: "/images/IMG_9750-1024x683.jpg",
+    after:  "/images/IMG_9688-1024x682.jpg",
+    category: "EV Charger",
   },
 ];
 
@@ -165,8 +165,7 @@ export default function GalleryPage() {
               <div className={`sub-heading fadeInUpS wow${heroVis}`}>Real Results</div>
               <div className={`content-entry fadeInUpS wow${heroVis}`} style={{ animationDelay: "0.1s" }}>
                 <p>
-                  Every job below was done by a Pipe Monkeys tech in Brooklyn, Queens, or Nassau
-                  County. These are real lines, real homes, and real results — no stock photos.
+                  Every job below was done by an O'Connor & Sons Electric technician in Palo Alto and across the Peninsula. These are real lines, real homes, and real results — no stock photos.
                   {/* [TODO: Replace placeholder images with actual job photos from client] */}
                 </p>
               </div>
@@ -178,9 +177,9 @@ export default function GalleryPage() {
               </div>
               <ul className="quick-links" role="list">
                 <li className={`fadeInUpS wow${heroVis}`} style={{ animationDelay: "0.1s" }}>
-                  <a className="ia-link ia-link--arrow" href="tel:7187491830">
+                  <a className="ia-link ia-link--arrow" href="tel:6507401121">
                     <i className="icon-link" />
-                    <span>Call (718) 749-1830</span>
+                    <span>Call (650) 740-1121</span>
                   </a>
                 </li>
                 <li className={`fadeInUpS wow${heroVis}`} style={{ animationDelay: "0.2s" }}>
@@ -218,8 +217,8 @@ export default function GalleryPage() {
             style={{ animationDelay: "0.2s" }}
           >
             <p>
-              Scroll through clogs we&apos;ve cleared across the area. From grease-packed kitchen
-              lines to root-choked main sewers — we document our work and stand behind every job.
+              Scroll through jobs we&apos;ve completed across the Peninsula. From outlet repairs to full panel
+              work — from outlet repairs to full panel upgrades — we document every job and stand behind our work.
             </p>
           </div>
           <div
@@ -257,14 +256,14 @@ export default function GalleryPage() {
           <div className={`front-donation__in wow fadeInUpS${ctaInView ? " is-visible" : ""}`} style={{ animationDelay: "0.2s" }}>
             <div className="content-entry">
               <p>
-                Call <strong>(718) 749-1830</strong> — we&apos;ll give you an honest price
+                Call <strong>(650) 740-1121</strong> — we&apos;ll give you an honest price
                 before we start, and we won&apos;t leave until the job is done right.
               </p>
             </div>
             <div className="front-donation__btn-wrap">
               <div className="front-donation__btn">
-                <a className="btn btn--primary" href="tel:7187491830">
-                  Call (718) 749-1830
+                <a className="btn btn--primary" href="tel:6507401121">
+                  Call (650) 740-1121
                 </a>
               </div>
             </div>

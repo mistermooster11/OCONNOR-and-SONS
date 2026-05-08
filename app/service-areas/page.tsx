@@ -7,46 +7,60 @@ import { useInView } from "framer-motion";
 
 const areas = [
   {
-    slug: "brooklyn",
-    region: "Brooklyn",
-    headline: "Drain & Sewer Specialists in Brooklyn",
+    slug: "palo-alto",
+    region: "Palo Alto",
+    headline: "Licensed Electricians in Palo Alto",
     description:
-      "Brooklyn has some of the oldest plumbing infrastructure in New York — pre-war pipe systems, clay drain lines in brownstones, and cast iron stacks in walk-ups that have been running for 80+ years. Our techs know exactly what to expect when they pull up to a building in Park Slope vs. Bay Ridge, and they arrive with the right equipment the first time.",
+      "O'Connor & Sons Electric has been based in midtown Palo Alto for over 30 years. We know the city's homes inside and out — the Eichlers with their unique electrical layouts, the older ranches and colonials with aging wiring, the newer custom builds, and the commercial buildings along El Camino Real. When Palo Alto homeowners and business owners have an electrical issue, they call us first.",
     callouts: [
-      "Brownstone & pre-war walk-up specialists",
-      "Stack drain issues in multi-family buildings",
-      "Same-day service, all neighborhoods",
+      "30+ years serving Palo Alto homes and businesses",
+      "Expertise with Eichlers and older residential wiring",
+      "Fast response — often same day",
     ],
     neighborhoods:
-      "Williamsburg • Greenpoint • Bushwick • Bed-Stuy • Crown Heights • Park Slope • Sunset Park • Bay Ridge • Bensonhurst • Dyker Heights • Gravesend • Sheepshead Bay • Coney Island • Flatbush • Canarsie • East New York & More",
+      "Midtown • Crescent Park • Barron Park • College Terrace • Old Palo Alto • Downtown Palo Alto • South Palo Alto • Duveneck/St. Francis • East Palo Alto",
   },
   {
-    slug: "queens",
-    region: "Queens",
-    headline: "Drain & Sewer Specialists in Queens",
+    slug: "menlo-park-atherton",
+    region: "Menlo Park & Atherton",
+    headline: "Licensed Electricians in Menlo Park & Atherton",
     description:
-      "Queens covers one of the widest mixes of home types in the entire city — from single-family houses in Whitestone and Bayside to dense apartment buildings in Astoria and Flushing. Our team handles everything from slow kitchen drains in a LIC condo to main line backups in a multi-unit Jackson Heights walk-up.",
+      "Menlo Park and Atherton are home to a wide range of properties — from classic California ranches and bungalows in the flats to large custom estates on multi-acre parcels. Many of these homes have significant electrical infrastructure that requires a knowledgeable, licensed electrician who understands both old and new construction. We serve the full spectrum.",
     callouts: [
-      "Single-family homes to large apartment buildings",
-      "Grease line clearing for restaurants & commercial kitchens",
-      "Emergency same-day response across all of Queens",
+      "Residential and estate electrical work",
+      "Remodeling and addition wiring",
+      "Panel upgrades for older homes",
     ],
     neighborhoods:
-      "Astoria • LIC • Maspeth • Flushing • Whitestone • Bayside • Forest Hills • Rego Park • Jackson Heights • Elmhurst • Middle Village • Ridgewood • Woodside • Sunnyside • Jamaica • Howard Beach & More",
+      "Downtown Menlo Park • Belle Haven • Allied Arts District • Sharon Heights • West Menlo Park • Atherton • Fair Oaks",
   },
   {
-    slug: "nassau-county",
-    region: "Nassau County",
-    headline: "Drain & Sewer Specialists in Nassau County",
+    slug: "mountain-view-los-altos-sunnyvale",
+    region: "Mountain View, Los Altos & Sunnyvale",
+    headline: "Licensed Electricians Serving Mountain View, Los Altos & Sunnyvale",
     description:
-      "Nassau County homes sit on longer sewer runs than most NYC properties, and mature tree root systems along those lines are one of the leading causes of main line backups. Our technicians understand how Nassau systems are laid out, where clogs typically form, and how to clear them without damaging the pipe.",
+      "The communities south of Palo Alto share many of the same electrical challenges — aging mid-century homes, growing EV adoption, remodeling projects that require careful coordination, and commercial spaces that need reliable, code-compliant electrical work. O'Connor & Sons serves homeowners and businesses throughout this corridor.",
     callouts: [
-      "Root intrusion specialists for Nassau main lines",
-      "Hydro jetting for long sewer runs",
-      "Local techs — not dispatched from far away",
+      "EV charger installation and panel upgrades",
+      "Residential and light commercial electrical",
+      "Remodeling wiring and permit coordination",
     ],
     neighborhoods:
-      "Valley Stream • Elmont • Franklin Square • West Hempstead • Hempstead • Garden City • Mineola • New Hyde Park • Floral Park • Rockville Centre • Oceanside • Baldwin • Freeport • Merrick • Bellmore • Wantagh • Seaford • Massapequa • Levittown • East Meadow • Uniondale • Lynbrook • Malverne • Hewlett & More",
+      "Mountain View • Los Altos • Los Altos Hills • Sunnyvale • Cupertino",
+  },
+  {
+    slug: "surrounding-peninsula",
+    region: "Surrounding Peninsula Communities",
+    headline: "Licensed Electricians Throughout the Peninsula",
+    description:
+      "Our service area extends to surrounding Peninsula communities west and south of Palo Alto. Whether it's a Portola Valley estate, a Redwood City commercial building, or a home in Woodside, our licensed team brings the same standard of work that has earned us a 5-star reputation across 590+ reviews.",
+    callouts: [
+      "Full residential and commercial electrical service",
+      "Same licensed team — no subcontracting",
+      "Permitted work, inspections handled",
+    ],
+    neighborhoods:
+      "Portola Valley • Woodside • Redwood City • Stanford University Area • and surrounding communities",
   },
 ];
 
@@ -83,7 +97,7 @@ function AreaSection({ area, reversed }: { area: typeof areas[number]; reversed:
             </p>
             <p>
               Not sure if we cover your street?{" "}
-              <a href="tel:7187491830" className="ia-link">Call (718) 749-1830</a>{" "}
+              <a href="tel:6507401121" className="ia-link">Call (650) 740-1121</a>{" "}
               — we almost certainly do.
             </p>
           </div>
@@ -127,7 +141,7 @@ export default function ServiceAreasPage() {
               <div className={`sub-heading fadeInUpS wow${heroVis}`}>Coverage Area</div>
               <div className={`content-entry fadeInUpS wow${heroVis}`} style={{ animationDelay: "0.1s" }}>
                 <p>
-                  Pipe Monkeys serves all of Brooklyn, Queens, and Nassau County. We don&apos;t
+                  O'Connor & Sons Electric serves Palo Alto and communities throughout the Peninsula. We don&apos;t
                   subcontract — our own techs cover every neighborhood, every day, seven days a week.
                   Same-day scheduling is available across our entire service area.
                 </p>
@@ -148,9 +162,9 @@ export default function ServiceAreasPage() {
                   </li>
                 ))}
                 <li className={`fadeInUpS wow${heroVis}`} style={{ animationDelay: "0.4s" }}>
-                  <a className="ia-link ia-link--arrow" href="tel:7187491830">
+                  <a className="ia-link ia-link--arrow" href="tel:6507401121">
                     <i className="icon-link" />
-                    <span>Call (718) 749-1830</span>
+                    <span>Call (650) 740-1121</span>
                   </a>
                 </li>
               </ul>
@@ -179,14 +193,14 @@ export default function ServiceAreasPage() {
           <div className={`front-donation__in wow fadeInUpS${ctaInView ? " is-visible" : ""}`} style={{ animationDelay: "0.2s" }}>
             <div className="content-entry">
               <p>
-                Our dispatch is fast and our coverage is wide. Call <strong>(718) 749-1830</strong> and
+                Our dispatch is fast and our coverage is wide. Call <strong>(650) 740-1121</strong> and
                 we&apos;ll confirm in 30 seconds and get you on the schedule the same day.
               </p>
             </div>
             <div className="front-donation__btn-wrap">
               <div className="front-donation__btn">
-                <a className="btn btn--primary" href="tel:7187491830">
-                  Call (718) 749-1830
+                <a className="btn btn--primary" href="tel:6507401121">
+                  Call (650) 740-1121
                 </a>
               </div>
             </div>

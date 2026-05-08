@@ -54,8 +54,8 @@ export default function Insights() {
             <h2 className="h3 ia-white">Our Most Common Services</h2>
             <div className="content-entry ia-white max-w-2xl">
               <p className="ia-white">
-                From a single backed-up sink to a full main line blockage, select a service below
-                to see how we handle it — and what you can expect from start to finish.
+                From a tripped outlet to a full panel upgrade, select a service below
+                to see how we handle it — and what you can expect from our team.
               </p>
             </div>
           </div>

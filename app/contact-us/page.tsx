@@ -9,25 +9,32 @@ import CraftHero from "@/components/custom/craft-catalog/CraftHero";
 
 const serviceAreas = [
   {
-    region: "Brooklyn",
+    region: "Palo Alto & Central Peninsula",
     description:
-      "From brownstones in Park Slope to pre-war buildings in Williamsburg and multi-family homes in Bay Ridge, we know Brooklyn plumbing inside and out. Most Brooklyn jobs are available same-day.",
+      "Based in midtown Palo Alto, O'Connor & Sons has served the city's homes and businesses for over 30 years. We know Palo Alto's older residential stock, the Eichlers, the remodeled ranches, and the commercial buildings along El Camino.",
     neighborhoods:
-      "Williamsburg • Greenpoint • Bushwick • Bed-Stuy • Crown Heights • Park Slope • Sunset Park • Bay Ridge • Bensonhurst • Dyker Heights • Gravesend • Sheepshead Bay • Coney Island • and more",
+      "Midtown • Crescent Park • Barron Park • College Terrace • Old Palo Alto • Downtown Palo Alto • South Palo Alto • East Palo Alto",
   },
   {
-    region: "Queens",
+    region: "Menlo Park & Atherton",
     description:
-      "Queens has one of the widest mixes of homes in NYC — single-family houses in Whitestone and Bayside, apartment buildings in Astoria and LIC, and everything in between. Our team handles all of it.",
+      "Menlo Park and Atherton homes range from classic California ranches to large custom estates — many with aging electrical infrastructure that needs careful, knowledgeable work. We serve the full range.",
     neighborhoods:
-      "Astoria • LIC • Maspeth • Flushing • Whitestone • Bayside • Forest Hills • Rego Park • Jackson Heights • Elmhurst • Middle Village • and more",
+      "Downtown Menlo Park • Belle Haven • Allied Arts • Sharon Heights • Atherton • Fair Oaks",
   },
   {
-    region: "Nassau County",
+    region: "Mountain View, Los Altos & Sunnyvale",
     description:
-      "Nassau County homes often have longer main lines and mature trees that cause root intrusion and slow sewer drains. Our techs know exactly where Nassau lines tend to fail and how to clear them fast.",
+      "We regularly serve the tech-corridor communities south of Palo Alto — residential and light commercial electrical work for homeowners and businesses throughout the area.",
     neighborhoods:
-      "Valley Stream • Elmont • Franklin Square • West Hempstead • Hempstead • Garden City • Mineola • New Hyde Park • Floral Park • Rockville Centre • Oceanside • Baldwin • Freeport • Merrick • Bellmore • Wantagh • Seaford • Massapequa • Levittown • East Meadow • Uniondale • Lynbrook • Malverne • Hewlett • and more",
+      "Mountain View • Los Altos • Los Altos Hills • Sunnyvale • Cupertino",
+  },
+  {
+    region: "Surrounding Peninsula Communities",
+    description:
+      "Our service area extends to surrounding Peninsula communities. If you're not sure whether we cover your neighborhood, just call — we almost certainly do.",
+    neighborhoods:
+      "Portola Valley • Woodside • Redwood City • Stanford • and surrounding areas",
   },
 ];
 
@@ -121,7 +128,7 @@ export default function ContactPage() {
               style={{ animationDelay: "0.15s" }}
             >
               Fill out the form below or call us directly at{" "}
-              <strong>(718) 749-1830</strong>. We follow up fast — usually
+              <strong>(650) 740-1121</strong>. Tom responds promptly — often
               within the hour.
             </p>
           </div>
@@ -129,7 +136,7 @@ export default function ContactPage() {
           <div className="content-block-in wide">
             <div className="content-block-text content-entry p2 full-width">
               {/*
-                TODO: Replace this form with Pipe Monkeys' preferred form solution
+                TODO: Replace this form with O'Connor & Sons' preferred form solution
                 (HubSpot, Gravity Forms, JotForm, etc.).
               */}
               <form
@@ -176,13 +183,15 @@ export default function ContactPage() {
                     style={{ padding: "0.75rem 1rem", border: "1px solid #ccc", borderRadius: "4px", fontSize: "1.4rem", background: "white" }}
                   >
                     <option value="">Select a service…</option>
-                    <option>Main Sewer Line</option>
-                    <option>Kitchen Sink Drain</option>
-                    <option>Tub &amp; Shower Drain</option>
-                    <option>Toilet</option>
-                    <option>Hydro Jetting</option>
-                    <option>Camera Inspection</option>
-                    <option>Multi-Unit Building</option>
+                    <option>Electrical Troubleshooting</option>
+                    <option>Panel &amp; Subpanel Upgrade</option>
+                    <option>Residential Electrical</option>
+                    <option>Commercial Electrical</option>
+                    <option>Remodeling / New Construction</option>
+                    <option>Lighting Installation</option>
+                    <option>Outlet &amp; Switch Repair</option>
+                    <option>Smart Home Wiring</option>
+                    <option>EV Charger / Battery System</option>
                     <option>Not Sure / Other</option>
                   </select>
                 </div>
@@ -191,7 +200,7 @@ export default function ContactPage() {
                   <label htmlFor="message" className="p3 ia-medium">Message</label>
                   <textarea
                     id="message" name="message" rows={4}
-                    placeholder="Describe the issue — what's happening and where in the building?"
+                    placeholder="Describe the work you need — what's happening, what type of property, and any relevant details."
                     style={{ padding: "0.75rem 1rem", border: "1px solid #ccc", borderRadius: "4px", fontSize: "1.4rem", resize: "vertical" }}
                   />
                 </div>
@@ -219,8 +228,8 @@ export default function ContactPage() {
             style={{ animationDelay: "0.2s", marginBottom: "3rem" }}
           >
             <p>
-              We cover all of Brooklyn, Queens, and Nassau County. If you&apos;re
-              not sure whether we serve your neighborhood, call us — we almost
+              We serve Palo Alto and the broader Peninsula. If you&apos;re
+              not sure whether we cover your area, call us — we almost
               certainly do.
             </p>
           </div>
@@ -243,9 +252,10 @@ export default function ContactPage() {
             Our Service Area
           </h2>
           <div className={`fadeInUpS wow${mapVis}`} style={{ animationDelay: "0.2s" }}>
+            {/* TODO: Replace with Google Maps embed centered on 849 Clara Dr, Palo Alto, CA 94303 */}
             <iframe
-              title="Pipe Monkeys Service Area — Brooklyn, Queens, Nassau County"
-              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d96708.34194958338!2d-73.87153600000001!3d40.65751950000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1715000000000!5m2!1sen!2sus"
+              title="O'Connor & Sons Electric — Palo Alto, CA"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.3!2d-122.1224!3d37.4351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbb28416493a7%3A0xd067359d5e79b625!2s849+Clara+Dr%2C+Palo+Alto%2C+CA+94303!5e0!3m2!1sen!2sus!4v1715000000000!5m2!1sen!2sus"
               width="100%"
               height="480"
               style={{ border: 0, display: "block", borderRadius: "4px" }}

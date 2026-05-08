@@ -29,8 +29,7 @@ export default function CraftCatalogHero() {
                 style={{ animationDelay: "0.2s" }}
               >
                 <p>
-                  From backed-up kitchen sinks to full main sewer line clogs, Pipe Monkeys
-                  handles every drain problem in Brooklyn, Queens, and Nassau County. We use
+                  From tripped breakers to full panel upgrades, O'Connor & Sons Electric handles every electrical job in Palo Alto and across the Peninsula. We use
                   pro-grade equipment, give you upfront pricing, and don&apos;t leave until
                   the job is done right.
                 </p>

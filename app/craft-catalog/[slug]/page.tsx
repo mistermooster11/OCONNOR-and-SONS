@@ -22,8 +22,8 @@ export async function generateMetadata({
   const data = servicePages[slug];
   if (!data) return {};
   return {
-    title: `${data.title} — Pipe Monkeys`,
-    description: `Professional ${data.title.toLowerCase()} service in Brooklyn, Queens, and Nassau County. Upfront pricing, same-day scheduling, guaranteed results.`,
+    title: `${data.title} — O'Connor & Sons Electric`,
+    description: `Learn about our ${data.title} service in Palo Alto and the Peninsula. Licensed, permitted electrical work — O'Connor & Sons Electric.`,
   };
 }
 
@@ -86,7 +86,7 @@ export default async function ServiceDetailPage({
                   <p>
                     <strong>Ready to book?</strong>{" "}
                     Call{" "}
-                    <a href="tel:7187491830">(718) 749-1830</a>{" "}
+                    <a href="tel:6507401121">(650) 740-1121</a>{" "}
                     for same-day scheduling, or{" "}
                     <a href="/contact-us">send us a message online</a>.
                     We give you a price before we start — no surprises.
@@ -100,8 +100,7 @@ export default async function ServiceDetailPage({
             <RelatedCrafts
               description={
                 <p>
-                  Pipe Monkeys handles every type of drain and sewer problem
-                  across Brooklyn, Queens, and Nassau County. Explore our other
+                  O'Connor & Sons Electric handles every type of electrical work across Palo Alto and the Peninsula. Explore our other
                   services below.
                 </p>
               }

@@ -12,58 +12,72 @@ interface FaqItem {
 
 const faqItems: FaqItem[] = [
   {
-    title: "How quickly can you get here?",
+    title: "How quickly can you respond?",
     content: (
       <p>
-        Most calls are scheduled the same day, and we offer near-instant
-        response for urgent clogs. Timing depends on your exact neighborhood,
-        but we move fast. Call us at{" "}
-        <a href="tel:7187491830" className="ia-link">(718) 749-1830</a>{" "}
-        and we&apos;ll give you an accurate ETA on the spot.
+        Tom and his team are known for responding fast — often the same day,
+        and sometimes within hours. Many customers have reached us on short
+        notice and been helped the same day or evening. Call us at{" "}
+        <a href="tel:6507401121" className="ia-link">(650) 740-1121</a>{" "}
+        and we&apos;ll give you an honest ETA.
       </p>
     ),
   },
   {
-    title: "Do you give upfront pricing?",
+    title: "Are you licensed, bonded, and insured?",
     content: (
       <p>
-        Always. We diagnose the issue, explain the solution, and give you the
-        price before any work starts. No surprises, no upsell games. What we
-        quote is what you pay — period.
+        Yes. O&apos;Connor &amp; Sons Electric holds California State License
+        #513626, Class C10 (Electrical Contractor). We are fully bonded and
+        insured. All work is performed by licensed electricians — not
+        unlicensed helpers.
       </p>
     ),
   },
   {
-    title: "What tools do you use to clear drains?",
+    title: "Do you pull permits?",
     content: (
       <p>
-        We carry professional cutters, snakes, augers, and hydro-jetting
-        equipment on every truck. Your tech will choose the safest and most
-        effective method for your specific line and problem — and explain why
-        before starting.
+        Yes — for all work that requires a permit. Panel upgrades, EV charger
+        installations, remodeling electrical, and other qualifying work are
+        all permitted and inspected. We handle the paperwork and coordinate
+        city inspections as part of the job. No shortcuts on permit-required
+        work.
       </p>
     ),
   },
   {
-    title: "When should I consider hydro jetting instead of snaking?",
+    title: "Do you do both residential and commercial work?",
     content: (
       <p>
-        Snaking clears a path through the clog. Jetting actually scrubs grease,
-        scale, and buildup off the pipe walls — giving you a cleaner line and
-        much longer-lasting results. If you get repeat clogs in the same drain,
-        jetting is usually the right call. We&apos;ll tell you honestly which
-        one makes sense for your situation.
+        Yes. We handle residential homes, condos, apartments, and commercial
+        buildings throughout Palo Alto and the Peninsula. Property managers
+        and business owners have relied on O&apos;Connor &amp; Sons for
+        decades. We&apos;re experienced working in occupied commercial spaces
+        and coordinate to minimize disruption.
       </p>
     ),
   },
   {
-    title: "Do you service apartments and multi-unit buildings?",
+    title: "Can you troubleshoot electrical problems that other electricians couldn't diagnose?",
     content: (
       <p>
-        All the time. We work with brownstones, pre-war buildings, walk-ups,
-        condos, co-ops, and multi-family homes across Brooklyn, Queens, and
-        Nassau County every day. We coordinate with building managers and work
-        to minimize disruption to other tenants.
+        That&apos;s what we&apos;re known for. Tom O&apos;Connor completed 4+
+        years of formal European electrical trade school — a rigorous,
+        apprenticeship-based training program. Our customers regularly report
+        that Tom identified dangerous wiring conditions and root causes that
+        other contractors had missed. Troubleshooting is our specialty.
+      </p>
+    ),
+  },
+  {
+    title: "Do you install EV chargers and work on Tesla Powerwalls?",
+    content: (
+      <p>
+        Yes. We install Level 2 EV charger circuits, NEMA 14-50 outlets,
+        and work on home battery systems including Tesla Powerwall installations
+        and troubleshooting. We also remediate Powerwall and EV charger
+        installations that weren&apos;t done correctly by others.
       </p>
     ),
   },
@@ -71,35 +85,25 @@ const faqItems: FaqItem[] = [
     title: "What areas do you serve?",
     content: (
       <>
-        <p>We serve all of Brooklyn, Queens, and Nassau County including:</p>
         <p>
-          <strong>Brooklyn:</strong> Williamsburg, Greenpoint, Bushwick,
-          Bed-Stuy, Crown Heights, Park Slope, Sunset Park, Bay Ridge,
-          Bensonhurst, Dyker Heights, Gravesend, Sheepshead Bay, Coney Island
-          and more.
-        </p>
-        <p>
-          <strong>Queens:</strong> Astoria, LIC, Maspeth, Flushing, Whitestone,
-          Bayside, Forest Hills, Rego Park, Jackson Heights, Elmhurst, Middle
-          Village and more.
-        </p>
-        <p>
-          <strong>Nassau County:</strong> Valley Stream, Elmont, Franklin
-          Square, West Hempstead, Hempstead, Garden City, Mineola, New Hyde
-          Park, Rockville Centre, Oceanside, Freeport, Merrick, Bellmore,
-          Levittown, East Meadow and more.
+          We are based in midtown Palo Alto and serve the greater Peninsula
+          area including: Palo Alto, Menlo Park, Mountain View, Los Altos,
+          Los Altos Hills, Sunnyvale, Cupertino, Atherton, Portola Valley,
+          Woodside, East Palo Alto, and surrounding communities. If you&apos;re
+          not sure, just call — we almost certainly cover your area.
         </p>
       </>
     ),
   },
   {
-    title: "Do you clean up after the job?",
+    title: "How do you charge — by the hour or by the job?",
     content: (
       <p>
-        Yes — always. Every tech wears shoe covers, lays down drop cloths, and
-        cleans the workspace before leaving. We test the flow, show you the
-        results, and make sure your home is cleaner than we found it. That
-        &apos;s not a bonus — it&apos;s standard.
+        We assess the work and give you a clear price before we start. Our
+        goal is that you know exactly what you&apos;re paying before we touch
+        anything. We&apos;re not the cheapest option in Palo Alto — and we
+        don&apos;t try to be. We&apos;re the best at what we do, and our 5-star
+        reviews across hundreds of customers reflect that.
       </p>
     ),
   },
@@ -197,16 +201,16 @@ export default function GeneralFaqsPage() {
             <div className={`front-donation__in wow fadeInUpS${donationInView ? " is-visible" : ""}`} style={{ animationDelay: "0.2s" }}>
               <div className="content-entry">
                 <p>
-                  Call us at <strong>(718) 749-1830</strong> — our team picks up fast
-                  and can answer any question, schedule a same-day visit, or give you
+                  Call us at <strong>(650) 740-1121</strong> — Tom picks up fast
+                  and can answer any question, discuss your project, or give you
                   an honest assessment over the phone.
                 </p>
               </div>
               <div className="front-donation__btn-wrap">
                 <div className="front-donation__btn">
                   <SecondaryButton
-                    label="Call (718) 749-1830"
-                    href="tel:7187491830"
+                    label="Call (650) 740-1121"
+                    href="tel:6507401121"
                   />
                 </div>
               </div>

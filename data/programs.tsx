@@ -39,12 +39,14 @@ export const programsData: ProgramsPageData = {
 
   hero: {
     bgImage: "/images/IMG_9750-1024x683.jpg",
+    // TODO: Replace with an O'Connor & Sons job site photo
     title: "Our Services",
     description: (
       <p>
-        Pipe Monkeys handles every type of drain and sewer issue across
-        Brooklyn, Queens, and Nassau County — from a slow kitchen sink to a
-        fully blocked main line.
+        O&rsquo;Connor &amp; Sons Electric handles the full range of
+        residential, commercial, and remodeling electrical work throughout
+        Palo Alto and the Peninsula — from a single tripped outlet to a
+        complete remodel rewire.
       </p>
     ),
     breadcrumbParentLabel: "Services",
@@ -55,17 +57,17 @@ export const programsData: ProgramsPageData = {
     content: (
       <>
         <p>
-          Every job starts the same way: we diagnose the problem, explain the
-          solution in plain language, and give you the price before any work
-          begins. Our techs carry professional-grade cutters, snakes, augers,
-          and hydro-jetting equipment — so whatever the line throws at us,
-          we&rsquo;re ready.
+          Every job starts the same way: we assess the situation, explain what
+          we find in plain language, and give you a clear price before any work
+          begins. Tom O&rsquo;Connor and his sons are licensed, bonded, and
+          insured — and they treat every job, big or small, with the same
+          attention to detail.
         </p>
         <p>
-          We work in residential homes, brownstones, pre-war walk-ups, condos,
-          and multi-family buildings. Same-day scheduling available. Near-instant
-          response for emergencies. Call{" "}
-          <a href="tel:7187491830">(718) 749-1830</a> to get started.
+          Family-owned and Palo Alto-based for over 30 years. European-trained
+          electricians with 4+ years of formal trade school. California License
+          #513626, Class C10. Call{" "}
+          <a href="tel:6507401121">(650) 740-1121</a> to get started.
         </p>
       </>
     ),
@@ -76,101 +78,122 @@ export const programsData: ProgramsPageData = {
 
   programs: [
     {
-      title: "Main Sewer Line Clearing",
+      title: "Electrical Troubleshooting",
       content: (
         <p>
-          Roots, scale, grease buildup, and heavy blockages in the main line
-          require pro-level equipment — not a standard snake from the hardware
-          store. Our techs use industrial cutters and jetting to restore full
-          flow to your main sewer line and confirm it before leaving. We handle
-          this every day in Brooklyn brownstones, Queens multi-families, and
-          Nassau County homes with long sewer runs.
+          Tripped breakers that keep resetting, flickering lights, dead outlets,
+          and circuits that behave inconsistently all point to a root cause that
+          needs to be found — not just reset. O&rsquo;Connor &amp; Sons are
+          experts in electrical diagnostics. We find the actual source of the
+          problem and fix it right the first time.
         </p>
       ),
-      learnMoreHref: "/craft-catalog/main-sewer-lines",
+      learnMoreHref: "/craft-catalog/electrical-troubleshooting",
     },
     {
-      title: "Kitchen Sink Drain Clearing",
+      title: "Panel & Subpanel Upgrades",
       content: (
         <p>
-          Grease, food debris, and soap scum are the most common kitchen culprits
-          — and they build up fast in NYC buildings with heavy daily use. We
-          clear kitchen drains using professional cutters and hydro jetting
-          depending on the severity, leaving the line fully open and grease-free.
-          No mess, no damage to pipes, and no recurring clogs if you go with
-          jetting.
+          An undersized or aging panel limits what your home or building can
+          safely run. We upgrade electrical panels to 200-amp service, install
+          subpanels for garages and ADUs, and replace failing panels — pulling
+          all required permits and coordinating city inspections from start to
+          finish.
         </p>
       ),
-      learnMoreHref: "/craft-catalog/kitchen-sinks",
+      learnMoreHref: "/craft-catalog/panel-subpanel-upgrades",
     },
     {
-      title: "Tub & Shower Drain Clearing",
+      title: "Residential Electrical",
       content: (
         <p>
-          Hair, soap buildup, and mineral deposits accumulate silently until
-          you&rsquo;re standing in ankle-deep water. Our techs remove the
-          blockage cleanly — no torn-up tile, no chemical damage to pipes — and
-          leave the bathroom exactly as they found it. Shoe covers and drop
-          cloths every time.
+          From circuit additions to whole-home rewires, O&rsquo;Connor &amp;
+          Sons handles all residential electrical work in Palo Alto and
+          surrounding Peninsula communities. Family-owned for over 30 years, we
+          know local homes — the older construction, the ADUs, the remodeled
+          Eichlers — and we treat every home with the same care.
         </p>
       ),
-      learnMoreHref: "/craft-catalog/tubs-and-showers",
+      learnMoreHref: "/craft-catalog/residential-electrical",
     },
     {
-      title: "Toilet Clog Clearing",
+      title: "Commercial Electrical",
       content: (
         <p>
-          Stubborn toilet clogs — including foreign objects, excessive paper,
-          and hard-to-reach blockages — are cleared fast with the right auger
-          and technique. We&rsquo;ve retrieved everything from children&rsquo;s
-          toys to full pipe obstructions. No splash, no stress, and we test the
-          flush before we leave.
+          Licensed commercial electrical work for offices, retail spaces, small
+          businesses, and multi-unit properties throughout Palo Alto and the
+          Peninsula. We work efficiently in occupied commercial spaces, pull
+          permits, coordinate inspections, and document everything. Property
+          managers have relied on us for decades.
         </p>
       ),
-      learnMoreHref: "/craft-catalog/toilets",
+      learnMoreHref: "/craft-catalog/commercial-electrical",
     },
     {
-      title: "Hydro Jetting",
+      title: "Remodeling & New Construction",
       content: (
         <p>
-          Snaking clears a path through the clog. Hydro jetting actually scrubs
-          grease, scale, and buildup off the pipe walls — giving you a like-new
-          interior and dramatically reducing repeat clogs. If you&rsquo;ve been
-          dealing with the same drain backing up every few months, jetting is
-          the long-term fix. Available for kitchen lines, main sewer lines, and
-          commercial buildings.
+          Kitchen rewires, bathroom circuits, ADU wiring, and whole-home
+          renovations — we handle all phases of remodeling electrical work from
+          rough-in through finish. We coordinate with your general contractor,
+          pull permits, and pass inspections on the first try. We&rsquo;ve
+          identified dangerous wiring conditions that other contractors missed.
         </p>
       ),
-      learnMoreHref: "/craft-catalog/hydro-jetting",
+      learnMoreHref: "/craft-catalog/remodeling-new-construction",
     },
     {
-      title: "Camera Inspection",
+      title: "Lighting Installation",
       content: (
         <p>
-          Before we recommend a repair or jetting service on your main line, we
-          can run a camera to show you exactly what&rsquo;s in there — root
-          intrusion, pipe damage, grease buildup, or collapsed sections. You see
-          what we see, in real time, so there&rsquo;s no guesswork and no
-          upselling on work you don&rsquo;t need.
+          Track lighting, recessed cans, pendant fixtures, ceiling fans, and
+          under-cabinet lighting — we install all types of residential and
+          commercial lighting throughout Palo Alto. We assess circuit capacity,
+          fish wiring through finished walls where possible, and test every
+          switch and dimmer before we leave.
         </p>
       ),
-      learnMoreHref: "/craft-catalog/camera-inspection",
+      learnMoreHref: "/craft-catalog/lighting-installation",
     },
     {
-      title: "Multi-Unit & Commercial Buildings",
+      title: "Outlet & Switch Repair",
       content: (
         <p>
-          We work with brownstones, pre-war walk-ups, condos, co-ops, and
-          multi-family buildings across Brooklyn and Queens every single day.
-          Stack drain issues, shared main lines, and building-wide backups are
-          all in our wheelhouse. We coordinate with building managers and
-          minimize disruption to tenants throughout the job.
+          Dead outlets, GFCI receptacles that won&rsquo;t reset, switches that
+          control the wrong fixtures, and non-weatherproof outdoor outlets are
+          among our most common service calls — and most are handled quickly,
+          often the same day. We resolve the root cause, not just the symptom.
         </p>
       ),
-      learnMoreHref: "/craft-catalog/multi-unit-buildings",
+      learnMoreHref: "/craft-catalog/outlet-switch-repair",
+    },
+    {
+      title: "Smart Home Wiring",
+      content: (
+        <p>
+          Smart switches, Vantage home control systems, and whole-home smart
+          lighting require properly installed electrical infrastructure to
+          function reliably. We handle the wiring, dedicated circuits, and
+          compatibility assessment that smart home installations demand — and
+          troubleshoot existing systems that aren&rsquo;t behaving.
+        </p>
+      ),
+      learnMoreHref: "/craft-catalog/smart-home-wiring",
+    },
+    {
+      title: "EV Charger & Battery Systems",
+      content: (
+        <p>
+          Level 2 EV charger installation, NEMA 14-50 outlet circuits, Tesla
+          Powerwall troubleshooting and remediation, and home battery system
+          wiring — done correctly, permitted, and inspected. In Palo Alto, EV
+          and battery systems are now routine for us. We also fix installations
+          that weren&rsquo;t done right the first time.
+        </p>
+      ),
+      learnMoreHref: "/craft-catalog/ev-charger-battery-systems",
     },
   ],
 
-  // No external partners — use service area neighborhoods instead
   partners: [],
 };

@@ -27,7 +27,7 @@ export default function Hero() {
               visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-full',
             ].join(' ')}
           >
-            Brooklyn, Queens &amp; Nassau County Drain Clearing
+            Palo Alto&rsquo;s Licensed Electrical Contractors
           </h1>
 
           <div className="flex justify-start pb-20 max-[767px]:block max-[767px]:pb-8">
@@ -41,15 +41,15 @@ export default function Hero() {
               ].join(' ')}
             >
               <p className="text-[1.9rem] leading-[1.6]">
-                From sinks to main lines, we clear tough clogs across Brooklyn,
-                Queens and Nassau County with pro gear and zero stress.
-                Upfront pricing. Family owned. Local NYC techs.
+                Family-owned for over 30 years. European-trained electricians.
+                Residential, commercial, and remodeling electrical work done
+                right — licensed, bonded, and insured.
               </p>
             </div>
 
             <PrimaryButton
-              label="Call (718) 749-1830"
-              href="tel:7187491830"
+              label="Call (650) 740-1121"
+              href="tel:6507401121"
               dark
               wow
               visible={visible}
@@ -108,7 +108,7 @@ export default function Hero() {
                   visible ? 'h-full scale-100' : 'h-0 scale-[1.2]',
                 ].join(' ')}
               >
-                {/* TODO: Replace src with a Pipe Monkeys hero image or video */}
+                {/* TODO: Replace src with an O'Connor & Sons hero image or video */}
                 <video
                   loop
                   autoPlay

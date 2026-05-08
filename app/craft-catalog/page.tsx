@@ -2,9 +2,9 @@ import CraftCatalogHero from "@/components/custom/craft-catalog/CraftCatalogHero
 import CraftCatalogClient from "@/components/custom/craft-catalog/CraftCatalogClient";
 
 export const metadata = {
-  title: "Our Services – Pipe Monkeys",
+  title: "Our Services – O'Connor & Sons Electric",
   description:
-    "Pipe Monkeys offers drain clearing and plumbing services across Brooklyn, Queens, and Nassau County. From kitchen sinks to main sewer lines — same-day service, upfront pricing.",
+    "Licensed electrical contractors serving Palo Alto and the Peninsula. Residential, commercial, and remodeling electrical work — permitted and inspected.",
 };
 
 export default function CraftCatalogPage() {

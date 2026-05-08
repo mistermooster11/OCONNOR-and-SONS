@@ -3,34 +3,38 @@
 import { useRef, useState, useEffect, useCallback } from "react";
 import { useInView } from "framer-motion";
 
-// TODO: Replace placeholder reviews with real Google reviews from Pipe Monkeys.
-// Daniel Pipitone is confirmed real. The others are placeholders — request from client.
 const testimonials = [
   {
-    id: "daniel-pipitone",
+    id: "marta-r",
     quote:
-      "Professional service with a very fair price. They send you info about the assigned technician in advance and showed up exactly on time. They cleaned up nicely after snaking a drain line on the 2nd floor of a 3 story building. Forget Roto Rooter — Pipe Monkeys will be my new go-to for plumbing needs.",
-    name: "Daniel Pipitone",
-    position: "Brooklyn Homeowner",
-    platform: "Google Review ★★★★★",
+      "I highly recommend O'Connor & Sons Electric. Tom O'Connor is deeply knowledgeable, efficient, and extremely good at troubleshooting. During my whole-house remodel, he identified dangerous wiring issues that other contractors had missed. He's the real deal.",
+    name: "Marta R.",
+    position: "Palo Alto Homeowner",
+    platform: "Yelp Review ★★★★★",
   },
   {
-    id: "maria-santos",
-    // TODO: Replace with a real Google review from client
+    id: "willie-l",
     quote:
-      "Called at 9am with a completely backed up kitchen drain. Tech was here by 11, cleared it in under an hour. He explained exactly what caused the clog and how to prevent it. Pricing was upfront and fair — no pushing extras I didn't need. Will absolutely use them again.",
-    name: "Maria Santos",
-    position: "Queens Homeowner",
-    platform: "Google Review ★★★★★",
+      "When an outlet in our kitchen tripped and wouldn't reset, Tom was the first one we reached. He resolved our issue promptly — on a Friday evening! Incredibly responsive. Will absolutely use them again.",
+    name: "Willie L.",
+    position: "Palo Alto Homeowner",
+    platform: "Yelp Review ★★★★★",
   },
   {
-    id: "james-oconnor",
-    // TODO: Replace with a real Google review from client
+    id: "s-q",
     quote:
-      "Had a main line backup that two other companies couldn't fully clear. Pipe Monkeys came the same afternoon, ran a camera first so we could see exactly what was in there, then jetted it clean. You could see the difference on the camera footage after. Highly recommend for any serious sewer issue.",
-    name: "James O'Connor",
-    position: "Nassau County Homeowner",
-    platform: "Google Review ★★★★★",
+      "I've got a few properties and have used O'Connor & Sons multiple times at all of them, and always came away highly satisfied. His crew retrofitted an electrical heating system recently, and performed needed subpanel upgrades at other properties. Highly recommend.",
+    name: "S.Q.",
+    position: "Palo Alto Property Owner",
+    platform: "Nextdoor Recommendation ★★★★★",
+  },
+  {
+    id: "r-o",
+    quote:
+      "Tom and his sons do great work solving electrical problems while providing an excellent explanation of the root cause. They quickly resolved two separate problems — both related to an inferior Tesla Powerwall installation. Highly competent and thorough.",
+    name: "R.O.",
+    position: "Menlo Park Homeowner",
+    platform: "Nextdoor Recommendation ★★★★★",
   },
 ];
 

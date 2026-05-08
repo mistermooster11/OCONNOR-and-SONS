@@ -5,60 +5,61 @@ import { useInView } from "framer-motion";
 
 /* ── Blog Posts (placeholder — swap with real posts or CMS data) */
 
+// TODO: Replace with real blog posts or connect to a CMS
 const posts = [
   {
-    id: "why-drains-keep-clogging",
-    title: "Why Your Drain Keeps Clogging (And What Actually Fixes It)",
+    id: "do-i-need-panel-upgrade",
+    title: "Do I Need a 200-Amp Panel Upgrade? A Palo Alto Homeowner's Guide",
     excerpt:
-      "Snaking the same drain every few months? The problem usually isn't the clog — it's grease or mineral buildup on the pipe walls. Here's when to snake and when to jet.",
-    category: "Drain Tips",
-    date: "April 2026",
-    href: "/blog/why-drains-keep-clogging",
-  },
-  {
-    id: "hydro-jetting-vs-snaking",
-    title: "Hydro Jetting vs. Drain Snaking: Which One Do You Actually Need?",
-    excerpt:
-      "Both tools clear clogs — but they work very differently. We break down the honest answer for homeowners who don't want to overpay or get upsold.",
-    category: "How It Works",
-    date: "March 2026",
-    href: "/blog/hydro-jetting-vs-snaking",
-  },
-  {
-    id: "main-line-warning-signs",
-    title: "5 Warning Signs Your Main Sewer Line Is About to Back Up",
-    excerpt:
-      "Multiple slow drains, gurgling toilets, foul smells near floor drains — these aren't random. They're your plumbing system telling you something's wrong downstream.",
+      "Breakers tripping frequently, no room to add circuits, planning an EV charger or addition — these are all signs your panel may be limiting you. Here's how to know for sure.",
     category: "Homeowner Guide",
-    date: "February 2026",
-    href: "/blog/main-line-warning-signs",
+    date: "April 2026",
+    href: "/blog/do-i-need-panel-upgrade",
   },
   {
-    id: "brooklyn-old-pipes",
-    title: "Brooklyn's Old Pipes: What Every Brownstone Owner Needs to Know",
+    id: "ev-charger-installation-palo-alto",
+    title: "EV Charger Installation in Palo Alto: What You Need to Know",
     excerpt:
-      "Pre-war buildings in Brooklyn often have clay, cast iron, or even Orangeburg pipe. We explain what that means for your drains and how to stay ahead of blockages.",
+      "Level 2 chargers require a 240V dedicated circuit, a panel with available capacity, and a permit. Here's what the installation process actually looks like — and what can go wrong.",
+    category: "EV & Battery",
+    date: "March 2026",
+    href: "/blog/ev-charger-installation-palo-alto",
+  },
+  {
+    id: "electrical-troubleshooting-101",
+    title: "5 Electrical Problems That Seem Minor But Aren't",
+    excerpt:
+      "A breaker that trips occasionally, an outlet that's warm to the touch, lights that flicker when the AC runs — these symptoms have root causes that need to be found, not just reset.",
+    category: "Safety",
+    date: "February 2026",
+    href: "/blog/electrical-troubleshooting-101",
+  },
+  {
+    id: "eichler-electrical-guide",
+    title: "Eichler Electrical: What Palo Alto Homeowners Should Know",
+    excerpt:
+      "Eichler homes have unique electrical characteristics — original panels, radiant heat systems, and layouts that require a licensed electrician who knows what to look for.",
     category: "Local Guide",
     date: "January 2026",
-    href: "/blog/brooklyn-old-pipes",
+    href: "/blog/eichler-electrical-guide",
   },
   {
-    id: "what-not-to-flush",
-    title: "What Not to Flush or Pour Down the Drain (The Real List)",
+    id: "smart-home-wiring-mistakes",
+    title: "Smart Home Wiring: The Most Common Installation Mistakes",
     excerpt:
-      "Flushable wipes aren't actually flushable. Grease hardens in your pipes. Here's what Pipe Monkeys techs pull out of clogged lines every single day.",
-    category: "Drain Tips",
+      "Smart switches, dimmers, and home control systems fail most often due to wiring errors — wrong neutral wire, incompatible dimmer-fixture combinations, or inadequate grounding.",
+    category: "Smart Home",
     date: "December 2025",
-    href: "/blog/what-not-to-flush",
+    href: "/blog/smart-home-wiring-mistakes",
   },
   {
-    id: "camera-inspection-worth-it",
-    title: "Is a Drain Camera Inspection Worth It? Honest Answer from a Tech",
+    id: "tesla-powerwall-troubleshooting",
+    title: "Tesla Powerwall Problems: What a Licensed Electrician Actually Sees",
     excerpt:
-      "You don't need a camera for a simple kitchen clog. But for recurring main line issues? A camera can save you thousands. Here's when we recommend it and why.",
-    category: "How It Works",
+      "We've resolved Powerwall issues caused by improper installation more than once. Here's what typically goes wrong and why proper electrical infrastructure matters.",
+    category: "EV & Battery",
     date: "November 2025",
-    href: "/blog/camera-inspection-worth-it",
+    href: "/blog/tesla-powerwall-troubleshooting",
   },
 ];
 
@@ -140,13 +141,10 @@ export default function BlogPage() {
         <div className="hero-org__bottom flex-module">
           <div className="inner inner--slim-1172 cleared">
             <div className={`hero-org__left wow${heroVis}`}>
-              <div className={`sub-heading fadeInUpS wow${heroVis}`}>From the Pipe Monkeys Team</div>
+              <div className={`sub-heading fadeInUpS wow${heroVis}`}>From the O'Connor & Sons Electric Team</div>
               <div className={`content-entry fadeInUpS wow${heroVis}`} style={{ animationDelay: "0.1s" }}>
                 <p>
-                  Practical advice from the techs who clear drains in Brooklyn, Queens, and Nassau
-                  County every single day. No fluff — just the honest information homeowners
-                  and building managers actually need.
-                </p>
+                  Practical electrical advice from the licensed techs who serve Palo Alto and the Peninsula</p>
               </div>
             </div>
 
@@ -168,9 +166,9 @@ export default function BlogPage() {
                   </a>
                 </li>
                 <li className={`fadeInUpS wow${heroVis}`} style={{ animationDelay: "0.3s" }}>
-                  <a className="ia-link ia-link--arrow" href="tel:7187491830">
+                  <a className="ia-link ia-link--arrow" href="tel:6507401121">
                     <i className="icon-link" />
-                    <span>Call (718) 749-1830</span>
+                    <span>Call (650) 740-1121</span>
                   </a>
                 </li>
               </ul>
@@ -215,14 +213,14 @@ export default function BlogPage() {
           <div className={`front-donation__in wow fadeInUpS${ctaInView ? " is-visible" : ""}`} style={{ animationDelay: "0.2s" }}>
             <div className="content-entry">
               <p>
-                Call <strong>(718) 749-1830</strong> and we&apos;ll give you an ETA on the spot.
-                Same-day service available seven days a week across Brooklyn, Queens, and Nassau County.
+                Call <strong>(650) 740-1121</strong> and we&apos;ll give you an ETA on the spot.
+                Same-day service available seven days a week across Palo Alto and the Peninsula.
               </p>
             </div>
             <div className="front-donation__btn-wrap">
               <div className="front-donation__btn">
-                <a className="btn btn--primary" href="tel:7187491830">
-                  Call (718) 749-1830
+                <a className="btn btn--primary" href="tel:6507401121">
+                  Call (650) 740-1121
                 </a>
               </div>
             </div>

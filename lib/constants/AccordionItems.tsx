@@ -4,58 +4,62 @@ type AccordionStep = { label: string; body: string };
 export const accordionItems = [
   {
     id: "accordion-0",
-    title: "Main Sewer Lines",
+    title: "Electrical Troubleshooting",
     image: "/images/IMG_9688-1024x682.jpg",
+    // TODO: Replace with an O'Connor & Sons troubleshooting job photo
     description:
-      "When the main line backs up, every drain in the building stops. We clear main sewer lines in Brooklyn brownstones, Queens multi-family buildings, and Nassau County homes — same day.",
-    learnHref: "/craft-catalog/main-sewer-lines",
+      "Tripped breakers, flickering lights, dead outlets — we find the root cause and fix it right. European-trained electricians with 30+ years of diagnostic experience in Palo Alto.",
+    learnHref: "/craft-catalog/electrical-troubleshooting",
     steps: [
-      { label: "Diagnose", body: "We assess the blockage and confirm whether a camera inspection is needed before tools go in." },
-      { label: "Quote Upfront", body: "Price confirmed before any work begins — no surprises, no bait-and-switch." },
-      { label: "Clear It", body: "Industrial cutters and hydro jetting break through root masses, grease plugs, and heavy scale until flow is fully restored." },
-      { label: "Confirm & Clean Up", body: "We run water to verify full flow, show you the result, and leave the work area clean." },
+      { label: "Listen & Assess", body: "We understand the symptom pattern before picking up a tool — patterns point to causes." },
+      { label: "Diagnose", body: "We use professional testing equipment to measure voltage, continuity, and load — not just visual inspection." },
+      { label: "Explain First", body: "We tell you what we found and what the fix involves before any work begins. No surprise charges." },
+      { label: "Fix the Root Cause", body: "We repair the underlying issue — not just the symptom — and test thoroughly before leaving." },
     ] as AccordionStep[],
   },
   {
     id: "accordion-1",
-    title: "Kitchen Sink Drains",
+    title: "Panel & Subpanel Upgrades",
     image: "/images/IMG_9750-1024x683.jpg",
+    // TODO: Replace with an O'Connor & Sons panel upgrade photo
     description:
-      "Grease, food debris, and soap scum build up faster in NYC kitchens than anywhere else. We clear kitchen drains across Brooklyn, Queens, and Nassau County with pro snakes and hydro jetting.",
-    learnHref: "/craft-catalog/kitchen-sinks",
+      "Undersized panels can't support modern loads — EVs, appliances, and additions all demand more capacity. We upgrade to 200-amp service, add subpanels, and handle all permits and inspections.",
+    learnHref: "/craft-catalog/panel-subpanel-upgrades",
     steps: [
-      { label: "Diagnose", body: "We assess the drain and confirm whether snaking or hydro jetting is the right call for your situation." },
-      { label: "Quote Upfront", body: "Price confirmed before we touch anything — what we quote is what you pay." },
-      { label: "Clear It", body: "Hydro jetting scrubs grease from pipe walls for recurring clogs; a professional snake handles straightforward blockages fast." },
-      { label: "Test & Clean Up", body: "Hot water confirms full drainage. We wipe down the work area before leaving." },
+      { label: "Assess Capacity", body: "We evaluate your current panel and your actual load requirements before recommending a solution." },
+      { label: "Pull Permits", body: "All panel work is permitted. We handle the paperwork and coordinate the city inspection." },
+      { label: "Install", body: "We replace or upgrade the panel, reroute circuits as needed, and restore power as quickly as possible." },
+      { label: "Inspection Sign-Off", body: "Work isn't done until the city inspection passes. We stand behind every panel job." },
     ] as AccordionStep[],
   },
   {
     id: "accordion-2",
-    title: "Hydro Jetting",
-    image: "/images/iStock-530983109-1.jpg",
+    title: "Remodeling Electrical",
+    image: "/images/IMG_9688-1024x682.jpg",
+    // TODO: Replace with an O'Connor & Sons remodel wiring photo
     description:
-      "A snake clears a path. Hydro jetting scrubs the pipe walls clean. If the same drain has backed up more than once this year, jetting is the long-term fix.",
-    learnHref: "/craft-catalog/hydro-jetting",
+      "Kitchen rewires, bathroom circuits, ADU wiring, and whole-home renovations. We coordinate with your GC, pull permits, and pass inspection the first time — every time.",
+    learnHref: "/craft-catalog/remodeling-new-construction",
     steps: [
-      { label: "Camera First", body: "We confirm the pipe is structurally sound before introducing high pressure — jetting a cracked pipe makes it worse." },
-      { label: "Quote Upfront", body: "Price confirmed before we start." },
-      { label: "Jet It", body: "The hose feeds through the clean-out at up to 4,000 PSI, scrubbing pipe walls clean in both directions until flow is fully restored." },
-      { label: "Confirm", body: "We run water to verify full flow. On main line jobs, we can run a post-jet camera to show you the before-and-after." },
+      { label: "Scope the Work", body: "We review the project plans with you and identify what electrical work the remodel requires — rough-in, trim-out, and new circuits." },
+      { label: "Coordinate", body: "We work directly with your GC and schedule around the construction sequence to keep the project moving." },
+      { label: "Rough-In & Trim-Out", body: "We complete all phases of the electrical work — from framing stage through fixture installation at finish." },
+      { label: "Permit & Inspect", body: "We pull the electrical permit and attend the inspection. Work isn't closed until it passes." },
     ] as AccordionStep[],
   },
   {
     id: "accordion-3",
-    title: "Camera Inspection",
+    title: "EV Charger & Battery Systems",
     image: "/images/IMG_9688-1024x682.jpg",
+    // TODO: Replace with an O'Connor & Sons EV charger or Powerwall photo
     description:
-      "Before recommending a major repair or repeated service, we run a camera through the line and show you exactly what's there — in real time. No guesswork. No upsells on work you don't need.",
-    learnHref: "/craft-catalog/camera-inspection",
+      "Level 2 EV charger installation, NEMA 14-50 outlets, Tesla Powerwall wiring and troubleshooting. Done correctly, permitted, and inspected — and we fix installations that weren't done right.",
+    learnHref: "/craft-catalog/ev-charger-battery-systems",
     steps: [
-      { label: "Access the Line", body: "We locate the clean-out or access point nearest the problem area." },
-      { label: "Quote Upfront", body: "Price confirmed before the camera goes in." },
-      { label: "Run the Camera", body: "High-resolution footage shows root masses, grease, cracks, or offsets in real time — you're watching the screen with us." },
-      { label: "Report & Recommend", body: "We tell you what we found and what needs to be done, with footage to back it up. You decide. No pressure." },
+      { label: "Panel Assessment", body: "We check available capacity before any EV or battery system goes in. If an upgrade is needed, we tell you before work begins." },
+      { label: "Permit", body: "EV charger and battery system installations require permits in Palo Alto. We pull them." },
+      { label: "Install Correctly", body: "Right wire gauge, right breaker sizing, right grounding — for the actual load and system involved." },
+      { label: "Inspection", body: "We coordinate the city inspection and close the permit. Done right, the first time." },
     ] as AccordionStep[],
   },
 ];
