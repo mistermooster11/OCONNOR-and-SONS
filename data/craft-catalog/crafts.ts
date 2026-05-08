@@ -3,6 +3,10 @@ export type CraftItem = {
   title: string;
 };
 
+// Stub exports required by CraftFilterBar (filter bar is unused in this build)
+export const CATEGORIES: readonly string[] = [];
+export const DISCIPLINES: readonly string[] = [];
+
 export const crafts: CraftItem[] = [
   { slug: "electrical-troubleshooting",   title: "Electrical Troubleshooting"        },
   { slug: "panel-subpanel-upgrades",      title: "Panel & Subpanel Upgrades"         },
