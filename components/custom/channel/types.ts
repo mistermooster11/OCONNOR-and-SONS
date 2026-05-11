@@ -26,7 +26,7 @@ export type HeroData = {
   description:        ReactNode;   // JSX paragraph(s)
   imageBg:            string;      // full CSS background value
   breadcrumbLabel:    string;      // last crumb, e.g. "Associations"
-  breadcrumbParentLabel?: string;  // default "NCCER for Organizations"
+  breadcrumbParentLabel?: string;  // default "Our Services"
   breadcrumbParentHref?:  string;  // default "/explore/"
 };
 

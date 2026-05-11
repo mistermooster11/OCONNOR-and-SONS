@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getChannelData, channelDataMap } from "@/data/channel";
 import ChannelHero         from "@/components/custom/channel/ChannelHero";
@@ -8,6 +9,22 @@ import ChannelCrafts       from "@/components/custom/channel/ChannelCrafts";
 import ChannelTestimonials from "@/components/custom/channel/ChannelTestimonials";
 import ChannelFlexFeature  from "@/components/custom/channel/ChannelFlexFeature";
 import ChannelGetInTouch   from "@/components/custom/channel/ChannelGetInTouch";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const data = getChannelData(slug);
+  if (!data) return {};
+  return {
+    title: `About O'Connor & Sons Electric`,
+    description:
+      "Learn about O'Connor & Sons Electric — family-owned electrical contractors serving Palo Alto and the Peninsula for over 30 years. European-trained, C10 licensed.",
+    alternates: { canonical: `https://oconnor-and-sons-electric.com/explore/${slug}` },
+  };
+}
 
 /* Pre-render all known slugs at build time */
 export function generateStaticParams() {

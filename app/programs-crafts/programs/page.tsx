@@ -1,4 +1,12 @@
+import type { Metadata } from "next";
 import ChannelSidebar from "@/components/custom/channel/ChannelSidebar";
+
+export const metadata: Metadata = {
+  title: "Electrical Services Overview",
+  description:
+    "Browse the full range of electrical services offered by O'Connor & Sons Electric in Palo Alto. Residential, commercial, remodeling, EV chargers, panel upgrades, and more.",
+  alternates: { canonical: "https://oconnor-and-sons-electric.com/programs-crafts/programs" },
+};
 import ProgramsHero from "@/components/custom/programs/ProgramsHero";
 import ProgramsOverview from "@/components/custom/programs/ProgramsOverview";
 import ProgramsAccordion from "@/components/custom/programs/ProgramsAccordion";

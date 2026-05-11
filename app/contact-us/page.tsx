@@ -139,8 +139,9 @@ export default function ContactPage() {
                 TODO: Replace this form with O'Connor & Sons' preferred form solution
                 (HubSpot, Gravity Forms, JotForm, etc.).
               */}
+              {/* TODO: Replace action URL with live form endpoint (Formspree, HubSpot, Gravity Forms, etc.) before launch */}
               <form
-                action="#"
+                action="https://formspree.io/f/REPLACE_WITH_FORM_ID"
                 method="POST"
                 style={{
                   display: "grid",

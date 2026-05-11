@@ -36,8 +36,8 @@ export default function MobileNav({ isOpen, onClose }: MobileNavProps) {
       >
         {/* .mobile-navi__head */}
         <div className="relative px-[2.4rem] py-[1rem] flex items-center min-h-[54px] border-b border-[rgba(161,197,211,.3)]">
-          <Link href="/" onClick={onClose} aria-label="NCCER">
-            <img src="/logos/logo-long.svg" alt="NCCER" className="block h-[3.2rem]" />
+          <Link href="/" onClick={onClose} aria-label="O'Connor & Sons Electric">
+            <img src="/logos/logo-long.svg" alt="O'Connor & Sons Electric logo" className="block h-[3.2rem]" />
           </Link>
           {/* .mobile-navi__close */}
           <button
