@@ -91,15 +91,15 @@ function SubmitBtn() {
 
 export default function ContactPage() {
   const formRef  = useRef<HTMLDivElement>(null);
-  const hoursRef = useRef<HTMLDivElement>(null);
+
   const areasRef = useRef<HTMLDivElement>(null);
 
   const formInView  = useInView(formRef,  { once: true, margin: "0px 0px -60px 0px" });
-  const hoursInView = useInView(hoursRef, { once: true, margin: "0px 0px -60px 0px" });
+
   const areasInView = useInView(areasRef, { once: true, margin: "0px 0px -60px 0px" });
 
   const formVis  = formInView  ? " is-visible" : "";
-  const hoursVis = hoursInView ? " is-visible" : "";
+
   const areasVis = areasInView ? " is-visible" : "";
 
   return (
@@ -215,40 +215,6 @@ export default function ContactPage() {
               />
             </div>
 
-          </div>
-        </div>
-      </div>
-
-      {/* ── Office Hours ─────────────────────────────────────────── */}
-      <div
-        ref={hoursRef}
-        className={`flex-module fadeIn wow${hoursVis}`}
-        style={{ backgroundColor: "#FEFEF0" }}
-      >
-        <div className="inner inner--slim-1172">
-          <h2
-            className={`h3 fadeInUpS wow${hoursVis}`}
-            style={{ animationDelay: "0.1s" }}
-          >
-            Office Hours
-          </h2>
-          <div className={`contact-hours-grid fadeInUpS wow${hoursVis}`} style={{ animationDelay: "0.2s" }}>
-            <div className="contact-hours-card">
-              <div className="contact-hours-label p3 ia-medium">Monday – Friday</div>
-              <div className="contact-hours-time h4">7:30 am – 8:30 pm</div>
-            </div>
-            <div className="contact-hours-card">
-              <div className="contact-hours-label p3 ia-medium">Saturday</div>
-              <div className="contact-hours-time h4">7:30 am – 8:30 pm</div>
-            </div>
-            <div className="contact-hours-card">
-              <div className="contact-hours-label p3 ia-medium">Sunday</div>
-              <div className="contact-hours-time h4">10:00 am – 5:00 pm</div>
-            </div>
-            <div className="contact-hours-card contact-hours-card--accent">
-              <div className="contact-hours-label p3">Emergency Service</div>
-              <div className="contact-hours-time h4">7 Days a Week</div>
-            </div>
           </div>
         </div>
       </div>
