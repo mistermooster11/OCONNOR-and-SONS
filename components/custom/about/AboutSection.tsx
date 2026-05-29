@@ -82,7 +82,7 @@ export default function AboutSection() {
         <div className="about__media">
           <div className="about__img-wrap">
             <Image
-              src="/images/about-row.webp"
+              src="/images/about-row.jpg"
               alt="O'Connor &amp; Sons Electric team on the job"
               width={690}
               height={613}

@@ -74,7 +74,7 @@
 
 .header__logo img {
   width: 100%;
-  max-width: 200px;
+  max-width: 260px;
   height: auto;
 }
 
@@ -354,7 +354,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("/wp-assets/Title-Background-Image-scaled.webp");
+  background-image: url("/images/page-hero-bg.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;

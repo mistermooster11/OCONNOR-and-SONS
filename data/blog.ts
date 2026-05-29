@@ -12,7 +12,7 @@ export type BlogPost = {
 export const blogPosts: BlogPost[] = [
   {
     slug: "/2026/01/15/signs-your-electrical-panel-needs-an-upgrade/",
-    image: "/images/blog-3.png",
+    image: "/images/blog-panel-upgrade.jpg",
     date: "15",
     monthYear: "Jan '26",
     category: "Panel Upgrades",
@@ -23,7 +23,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "/2026/02/10/ev-charger-installation-what-to-expect/",
-    image: "/images/blog-2.png",
+    image: "/images/blog-ev-charger.jpg",
     date: "10",
     monthYear: "Feb '26",
     category: "EV Charger Installation",

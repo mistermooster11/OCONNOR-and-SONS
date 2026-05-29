@@ -50,7 +50,7 @@
 .hero__bg-image {
   position: absolute;
   inset: 0;
-  background-image: url("/wp-assets/Title-Background-Image-scaled.webp");
+  background-image: url("https://customer-ip9lnkk65px0t3ak.cloudflarestream.com/31ac721acdb1893f8d5e09ae146b21b6/thumbnails/thumbnail.jpg");
   background-position: 50% 50%;
   background-size: cover;
   z-index: 0;

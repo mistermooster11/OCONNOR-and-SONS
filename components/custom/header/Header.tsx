@@ -68,10 +68,10 @@ export default function Header() {
             <Image
               src="/Oconnor_logo_lightbackground.png"
               alt="O'Connor &amp; Sons Electric"
-              width={200}
-              height={60}
+              width={260}
+              height={78}
               priority
-              style={{ width: "100%", maxWidth: 200, height: "auto" }}
+              style={{ width: "100%", maxWidth: 260, height: "auto" }}
             />
           </Link>
         </div>
