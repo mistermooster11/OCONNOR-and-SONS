@@ -90,7 +90,7 @@ export default function AboutSection() {
             />
             <div className="about__exp-box w-full! md:w-fit! flex! flex-row! gap-10!">
               <div className="about__exp-icon">
-                <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#FFD268" strokeWidth="2" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#B4975A" strokeWidth="2" aria-hidden="true">
                   <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
                 </svg>
               </div>

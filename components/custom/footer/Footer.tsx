@@ -10,10 +10,10 @@ export default function Footer() {
         <div className="footer__brand">
           <Link href="/">
             <Image
-              src="/logo.svg"
+              src="/Oconnor_logo_darkbackground.png"
               alt="O'Connor &amp; Sons Electric"
               width={200}
-              height={44}
+              height={60}
               className="footer__logo"
               style={{ height: "auto" }}
             />

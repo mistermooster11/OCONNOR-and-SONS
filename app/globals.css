@@ -65,13 +65,13 @@
   --color-primary: #EEF3F7;        /* light blue-gray bg */
   --color-secondary: #000000;      /* black */
   --color-text: #252525;           /* body text */
-  --color-accent: #FFD268;         /* gold CTA */
+  --color-accent: #B4975A;         /* gold CTA */
   --color-white: #FFFFFF;
   --color-dark: #266021;           /* dark green */
   --color-dark-2: #1a4012;         /* mid green */
   --color-topbar: #163413;         /* deep forest topbar */
   --color-light-gray: #C5D0D7;
-  --color-red-light: #FFD268;      /* pricing checkmark / highlight */
+  --color-red-light: #B4975A;      /* pricing checkmark / highlight */
   --color-bg-light: #FAFAFA;
 
   /* Typography */

@@ -8,6 +8,15 @@ export default function HeroSection() {
   const dividerRef = useRef<HTMLHRElement>(null);
   const descRef = useRef<HTMLParagraphElement>(null);
   const buttonsRef = useRef<HTMLDivElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  // Imperatively trigger play — required for browsers that ignore the autoPlay attr
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+    video.muted = true;
+    video.play().catch(() => {/* autoplay blocked — poster stays visible */});
+  }, []);
 
   useEffect(() => {
     let cancelled = false;
@@ -54,10 +63,12 @@ export default function HeroSection() {
       {/* Video background */}
       <div className="hero__video-bg">
         <video
+          ref={videoRef}
           autoPlay
           muted
           playsInline
           loop
+          preload="auto"
           poster="https://customer-ip9lnkk65px0t3ak.cloudflarestream.com/31ac721acdb1893f8d5e09ae146b21b6/thumbnails/thumbnail.jpg"
           aria-hidden="true"
         >
