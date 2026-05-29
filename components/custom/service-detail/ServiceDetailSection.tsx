@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRef, useEffect } from "react";
+import { sidebarServices } from "@/data/services";
 
 interface ServiceDetailSectionProps {
   /** Sidebar image */
@@ -17,17 +18,10 @@ interface ServiceDetailSectionProps {
   intro: string[];
   /** "What We Do" bullets */
   whatWeDo: string[];
-  /** "Why Choose UnclogMe" bullets */
+  /** "Why Choose Us" bullets */
   whyChooseUs: string[];
 }
 
-const SIDEBAR_SERVICES = [
-  { label: "Commercial Unclogging", href: "/commercial-unclogging/" },
-  { label: "Residential Unclogging", href: "/residential-unclogging/" },
-  { label: "Recurring Grease Trap Cleaning", href: "/recurring-grease-trap-cleaning-maintenance/" },
-  { label: "Grease Trap Cleaning", href: "/grease-trap-cleaning/" },
-  { label: "Camera Inspection", href: "/camera-inspection/" },
-];
 
 function CheckIcon() {
   return (
@@ -90,7 +84,7 @@ export default function ServiceDetailSection({
           <div className="svc-detail__sidebar-box">
             <h3 className="svc-detail__sidebar-heading">Services</h3>
             <ul className="svc-detail__sidebar-list">
-              {SIDEBAR_SERVICES.map((s) => (
+              {sidebarServices.map((s) => (
                 <li key={s.href}>
                   <Link
                     href={s.href}
@@ -133,7 +127,7 @@ export default function ServiceDetailSection({
             ))}
           </ul>
 
-          <h3 className="svc-detail__list-heading">Why Choose UnclogMe</h3>
+          <h3 className="svc-detail__list-heading">Why Choose Us</h3>
           <ul className="svc-detail__list">
             {whyChooseUs.map((item, i) => (
               <li key={i} className="svc-detail__list-item">

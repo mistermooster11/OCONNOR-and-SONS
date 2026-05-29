@@ -5,7 +5,7 @@ export type NavItem = {
 };
 
 export const navItems: NavItem[] = [
-  { label: "Homepage", href: "/" },
+  { label: "Home", href: "/" },
   {
     label: "About",
     href: "/about-us",
@@ -18,19 +18,23 @@ export const navItems: NavItem[] = [
     label: "Services",
     href: "/services-page",
     children: [
-      { label: "Grease Trap Cleaning", href: "/grease-trap-cleaning" },
-      { label: "Commercial Unclogging", href: "/commercial-unclogging" },
-      { label: "Residential Unclogging", href: "/residential-unclogging" },
-      { label: "Camera Inspection", href: "/camera-inspection" },
+      { label: "Electrical Troubleshooting", href: "/electrical-troubleshooting" },
+      { label: "Panel Upgrade", href: "/panel-upgrade" },
+      { label: "Residential Electrical", href: "/residential-electrical" },
+      { label: "Commercial Electrical", href: "/commercial-electrical" },
+      { label: "Remodeling & New Construction", href: "/remodeling-new-construction" },
+      { label: "Lighting Installation", href: "/lighting-installation" },
+      { label: "Outlet & Switch Repair", href: "/outlet-switch-repair" },
+      { label: "Smart Home Wiring", href: "/smart-home-wiring" },
+      { label: "EV Charger Installation", href: "/ev-charger-installation" },
     ],
   },
-  { label: "Blog", href: "/blog-unclogme" },
+  { label: "Blog", href: "/blog" },
   {
     label: "Contact",
     href: "/contact-us",
     children: [
       { label: "Get In Touch", href: "/contact-us" },
-      { label: "Become an unclogger", href: "/become-an-unclogger" },
     ],
   },
 ];
@@ -43,12 +47,18 @@ export const quickLinks: FooterLink[] = [
   { label: "About", href: "/about-us/" },
   { label: "Services", href: "/services-page/" },
   { label: "FAQ", href: "/faq/" },
-  { label: "Become an Unclogger", href: "/become-an-unclogger/" },
+  { label: "Blog", href: "/blog/" },
+  { label: "Contact", href: "/contact-us/" },
 ];
 
 export const servicesLinks: FooterLink[] = [
-  { label: "Grease trap cleaning", href: "/grease-trap-cleaning/" },
-  { label: "Residential Unclogging", href: "/residential-unclogging/" },
-  { label: "Commercial Unclogging", href: "/commercial-unclogging/" },
-  { label: "Camera Inspection", href: "/camera-inspection/" },
+  { label: "Electrical Troubleshooting", href: "/electrical-troubleshooting/" },
+  { label: "Panel Upgrade", href: "/panel-upgrade/" },
+  { label: "Residential Electrical", href: "/residential-electrical/" },
+  { label: "Commercial Electrical", href: "/commercial-electrical/" },
+  { label: "Remodeling & New Construction", href: "/remodeling-new-construction/" },
+  { label: "Lighting Installation", href: "/lighting-installation/" },
+  { label: "Outlet & Switch Repair", href: "/outlet-switch-repair/" },
+  { label: "Smart Home Wiring", href: "/smart-home-wiring/" },
+  { label: "EV Charger Installation", href: "/ev-charger-installation/" },
 ];

@@ -5,27 +5,27 @@ export type WhyCard = {
 
 export const whyCards: WhyCard[] = [
   {
-    title: "Quality Service",
-    text: "Reliable residential and commercial solutions to prevent backups, violations, and costly disruptions across Miami-Dade County.",
+    title: "Licensed C10 Contractor",
+    text: "Fully licensed under California C10 #513626 with liability insurance and workers' comp. Every job meets or exceeds state and local electrical codes.",
   },
   {
-    title: "24/7 Availability",
-    text: "Professional grease trap cleaning and drain unclogging with consistent results across Miami-Dade.",
+    title: "Same-Day Service",
+    text: "Electrical problems don't wait — neither do we. We offer same-day and emergency dispatch throughout Palo Alto and the surrounding Peninsula.",
   },
   {
-    title: "Licensed & Insured",
-    text: "Compliance-focused services that meet local regulations. Fully licensed and insured grease trap and unclogging professionals serving Miami-Dade County.",
+    title: "30+ Years of Experience",
+    text: "Three decades of electrical work on the Peninsula means we've handled everything from basic repairs to full commercial buildouts. Nothing surprises us.",
   },
   {
-    title: "AI-Powered",
-    text: "We use AI-powered systems to streamline operations, making our day-to-day work faster, smarter, and more efficient.",
+    title: "EV Charger Experts",
+    text: "We specialize in Level 2 EV charger installations for all major brands. Dedicated circuits, proper permitting, and a clean install — every time.",
   },
   {
-    title: "Truck Technology",
-    text: "Our trucks are equipped with cutting-edge technology, allowing us to serve customers of all sizes with efficiency and reliability.",
+    title: "Permit Coordination",
+    text: "We handle permits start to finish on all jobs that require them, so your work is inspection-ready and your property value is protected.",
   },
   {
-    title: "14 Years of Experience",
-    text: "After identifying industry biggest gaps, UnclogMe was built to replace outdated practices with professionalism, reliability, and modern systems.",
+    title: "Transparent Pricing",
+    text: "No surprise invoices. We provide clear, written estimates before any work begins so you know exactly what you're getting and what it costs.",
   },
 ];

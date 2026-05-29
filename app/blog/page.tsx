@@ -6,9 +6,9 @@ import BlogSection from "@/components/custom/blog/BlogSection";
 import NeedServicesSection from "@/components/custom/need-services/NeedServicesSection";
 
 export const metadata: Metadata = {
-  title: "Blog — UnclogMe | Drain & Grease Trap Tips & Insights",
+  title: "Blog — O'Connor & Sons Electric | Electrical Tips & Guides",
   description:
-    "Read UnclogMe's blog for expert tips on grease trap maintenance, drain unclogging, and keeping your residential or commercial plumbing in top shape.",
+    "Read the O'Connor & Sons Electric blog for expert electrical tips, safety guides, EV charger information, and insights from a licensed C10 Peninsula electrician.",
 };
 
 export default function BlogPage() {
@@ -16,7 +16,7 @@ export default function BlogPage() {
     <>
       <PageHeroSection
         title="Blog"
-        subtitle="Expert tips, industry insights, and service guides from the UnclogMe team."
+        subtitle="Expert electrical tips, safety guides, and industry insights from the O'Connor & Sons Electric team."
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Blog" },

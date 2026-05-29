@@ -11,25 +11,25 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
-    slug: "/2026/02/02/how-proper-grease-disposal-protects-your-business-and-the-environment/",
+    slug: "/2026/01/15/signs-your-electrical-panel-needs-an-upgrade/",
     image: "/images/blog-3.png",
-    date: "02",
-    monthYear: "Feb '26",
-    category: "Grease Trap Cleaning",
-    categoryHref: "/category/grease-trap-cleaning/",
-    title: "How Proper Grease Disposal Protects Your Business and the Environment",
+    date: "15",
+    monthYear: "Jan '26",
+    category: "Panel Upgrades",
+    categoryHref: "/category/panel-upgrades/",
+    title: "5 Signs Your Electrical Panel Needs an Upgrade",
     excerpt:
-      "Grease disposal isn't just a plumbing issue — it's an environmental responsibility. This article explains how certified grease disposal protects sewer systems, waterways, and business",
+      "Flickering lights, tripped breakers, and a panel that still uses fuses are all warning signs. Here's how to know when it's time to upgrade and what the process looks like.",
   },
   {
-    slug: "/2026/02/02/emergency-vs-preventive-grease-trap-maintenance-what-really-costs-more/",
+    slug: "/2026/02/10/ev-charger-installation-what-to-expect/",
     image: "/images/blog-2.png",
-    date: "02",
+    date: "10",
     monthYear: "Feb '26",
-    category: "Grease Trap Cleaning",
-    categoryHref: "/category/grease-trap-cleaning/",
-    title: "Emergency vs Preventive Grease Trap Maintenance: What Really Costs More?",
+    category: "EV Charger Installation",
+    categoryHref: "/category/ev-charger-installation/",
+    title: "EV Charger Installation at Home: What to Expect",
     excerpt:
-      "This post compares emergency grease trap services with preventive maintenance plans, showing how planned cleaning reduces downtime, avoids fines, and protects restaurants from costly surpris",
+      "Thinking about installing a Level 2 EV charger at home? This guide walks you through the process, costs, permit requirements, and what makes a good installation.",
   },
 ];

@@ -40,18 +40,19 @@ export default function AboutSection() {
         <div className="about__content">
           <div className="about__label">About Us</div>
           <h2 className="about__heading">
-            Trusted grease trap and Unclogging services in Miami-Dade,
-            broward &amp; Palm beach
+            Trusted Electrical Contractor Serving
+            Palo Alto &amp; the Peninsula
+            for Over 30 Years
           </h2>
           <p className="about__text">
-            UnclogMe provides professional grease trap cleaning and drain
-            unclogging services for residential and commercial properties
-            across Miami-Dade, broward &amp; Palm beach.
+            O&apos;Connor &amp; Sons Electric is a family-owned C10 licensed electrical
+            contractor based in Palo Alto. We&apos;ve been serving homeowners,
+            landlords, and businesses across the Peninsula since the early 1990s.
           </p>
           <p className="about__text">
-            Our team focuses on preventive maintenance, fast response, and
-            compliant solutions to keep your property running safely and
-            efficiently.
+            From panel upgrades and EV charger installations to full rewires and
+            smart home wiring, we bring professional-grade workmanship and
+            transparent pricing to every job.
           </p>
           <h3 className="about__why-title">Why Choose Us</h3>
           <ul className="about__list">
@@ -82,22 +83,19 @@ export default function AboutSection() {
           <div className="about__img-wrap">
             <Image
               src="/images/about-row.webp"
-              alt="UnclogMe service team"
+              alt="O'Connor &amp; Sons Electric team on the job"
               width={690}
               height={613}
               className="about__img"
             />
             <div className="about__exp-box w-full! md:w-fit! flex! flex-row! gap-10!">
               <div className="about__exp-icon">
-                <Image
-                  src="/images/vector-decoration.svg"
-                  alt="Pipe Valve Icon"
-                  width={40}
-                  height={40}
-                />
+                <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#FFD268" strokeWidth="2" aria-hidden="true">
+                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                </svg>
               </div>
               <div className="about__exp-content flex flex-row gap-4">
-                <span className="about__exp-number">14+</span>
+                <span className="about__exp-number">30+</span>
                 <span className="about__exp-text">
                   Years of<br />Experience
                 </span>

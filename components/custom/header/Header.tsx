@@ -37,7 +37,7 @@ export default function Header() {
             <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z" />
             </svg>
-            7 DAYS A WEEK, 24/HRS A DAY
+            MON–SAT 7:30AM–8:30PM
           </span>
 
           <span className="topbar__item--separator">|</span>
@@ -51,11 +51,11 @@ export default function Header() {
 
           <span className="topbar__item--separator">|</span>
 
-          <a href="tel:+13053395638" className="topbar__item">
+          <a href="tel:+16507401121" className="topbar__item">
             <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <path d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z" />
             </svg>
-            +1 (305) 339-5638 TOLL-FREE NUMBER
+            (650) 740-1121
           </a>
         </div>
       </div>
@@ -66,8 +66,8 @@ export default function Header() {
         <div className="header__logo">
           <Link href="/">
             <Image
-              src="/logo.png"
-              alt="UnclogMe"
+              src="/logo.svg"
+              alt="O'Connor &amp; Sons Electric"
               width={200}
               height={44}
               priority

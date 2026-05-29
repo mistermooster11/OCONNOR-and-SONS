@@ -66,11 +66,11 @@ export default function ServicesSection() {
       <div className="services__header max-w-6xl! mx-auto">
         <div className="services__label">Our Services</div>
         <h2 className="services__heading">
-          Professional Unclogging &amp; Drain Solutions in Miami-Dade, broward &amp; Palm beach
+          Full-Service Electrical Solutions for Palo Alto &amp; the Peninsula
         </h2>
         <p className="services__subtext">
-          Reliable residential and commercial services designed to prevent backups, restore flow,
-          and keep your property compliant and running smoothly across Miami-Dade County.
+          From panel upgrades and EV charger installations to rewiring, troubleshooting, and smart
+          home wiring — professional electrical work done right, every time.
         </p>
       </div>
 

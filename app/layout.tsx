@@ -10,9 +10,9 @@ import { cn } from "@/lib/utils";
 const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 export const metadata: Metadata = {
-  title: "UnclogMe — Grease Trap Cleaning & Professional Unclogging Services in Miami-Dade",
+  title: "O'Connor & Sons Electric — Licensed Electrician in Palo Alto & the Peninsula",
   description:
-    "Reliable residential and commercial drain and grease trap services across Miami-Dade, Broward & Palm Beach — preventing backups, violations, and costly disruptions.",
+    "Licensed C10 electrical contractor serving Palo Alto and the Peninsula for 30+ years. Panel upgrades, EV charger installation, residential & commercial electrical — same-day service available.",
 };
 
 export default function RootLayout({

@@ -58,11 +58,11 @@ export default function HeroSection() {
           muted
           playsInline
           loop
-          poster="/wp-assets/Title-Background-Image-scaled.webp"
+          poster="https://customer-ip9lnkk65px0t3ak.cloudflarestream.com/31ac721acdb1893f8d5e09ae146b21b6/thumbnails/thumbnail.jpg"
           aria-hidden="true"
         >
           <source
-            src="https://unclogme.com/wp-content/uploads/2026/01/UnclogMe-VIDEO-HEADER-2.mp4"
+            src="https://customer-ip9lnkk65px0t3ak.cloudflarestream.com/31ac721acdb1893f8d5e09ae146b21b6/downloads/default.mp4"
             type="video/mp4"
           />
         </video>
@@ -71,26 +71,26 @@ export default function HeroSection() {
       {/* Content */}
       <div className="hero__content">
         <h1 className="hero__title" ref={titleRef}>
-          Grease Trap Cleaning &amp;
+          Licensed Electricians
           <br />
-          Professional Unclogging
+          Serving Palo Alto
           <br />
-          Services in Miami-Dade
+          &amp; the Peninsula
         </h1>
 
         <hr className="hero__divider" ref={dividerRef} />
 
         <p className="hero__description" ref={descRef}>
-          Reliable residential and commercial drain and grease trap services across
+          Residential and commercial electrical services from a C10-licensed contractor
           <br />
-          Miami-Dade, Broward &amp; Palm Beach — preventing backups, violations, and{" "}
+          with 30+ years on the Peninsula — panel upgrades, EV chargers, rewiring,
           <br />
-          costly disruptions.
+          and same-day troubleshooting.
         </p>
 
         <div className="hero__buttons" ref={buttonsRef}>
           <Link href="/contact-us" className="hero__btn-primary">
-            Fast Quote
+            Get a Free Quote
           </Link>
           <Link href="/about-us" className="hero__btn-secondary">
             About Us

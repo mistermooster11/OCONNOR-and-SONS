@@ -46,16 +46,16 @@ export default function CTAFormSection() {
   };
 
   const WHY_LEFT = [
-    "24/7 service, no extra charge",
-    "Licensed and insured professionals",
-    "Residential and commercial expertise",
-    "Fast response across Miami-Dade",
+    "Licensed C10 Electrical Contractor",
+    "Same-day & emergency service",
+    "Residential and commercial work",
+    "30+ years on the Peninsula",
   ];
   const WHY_RIGHT = [
-    "Compliance-focused grease trap services",
-    "Preventive and emergency solutions",
-    "Professional-grade equipment",
-    "Reliable, transparent, and efficient",
+    "Permit coordination included",
+    "EV charger & panel specialists",
+    "Transparent, upfront pricing",
+    "5.0★ rated on Yelp",
   ];
 
   return (
@@ -63,16 +63,16 @@ export default function CTAFormSection() {
       <div className="cta-form__container">
         {/* Left: orange bg + form */}
         <div className="cta-form__left p-10!">
-          <div className="cta-form__eyebrow hidden md:block">24/7 at no extra charge</div>
+          <div className="cta-form__eyebrow hidden md:block">Same-Day Service Available</div>
           <h2 className="cta-form__heading hidden md:block">
-            We are always ready <br />to help you and answer your questions
+            Get a Free Electrical Estimate <br />from a Licensed C10 Contractor
           </h2>
           <h2 className="cta-form__heading block md:hidden">
-            Get in touch
+            Get in Touch
           </h2>
           <p className="cta-form__subtext hidden md:block">
-            24/7 at no extra charge — Emergency Services Professional
-            <br />technicians – No travel fees
+            Fast response — Licensed &amp; Insured — Transparent Pricing
+            <br />No hidden fees, no weekend surcharges
           </p>
           <form className="cta-form__form" onSubmit={handleSubmit}>
             <div className="cta-form__row">
@@ -140,15 +140,15 @@ export default function CTAFormSection() {
         {/* Right: dark transparent bg, info */}
         <div className="cta-form__right">
           <div className="cta-form__eyebrow">Fast Quote</div>
-          <h2 className="cta-form__heading">Trusted When It Matters Most</h2>
+          <h2 className="cta-form__heading">Trusted Electricians for Palo Alto &amp; the Peninsula</h2>
           <p className="cta-form__text">
-            Fast-response residential and commercial unclogging services available 24/7 across
-            Miami-Dade County, with no additional fees for nights, weekends, or emergencies.
+            Whether you need a same-day repair, a panel upgrade, or a full electrical remodel,
+            O&apos;Connor &amp; Sons Electric delivers licensed, code-compliant work with upfront pricing
+            and no surprises.
           </p>
           <p className="cta-form__text">
-            We also provide scheduled grease trap cleaning and ongoing maintenance for restaurants
-            and commercial kitchens, helping you stay compliant, avoid violations, and keep your
-            operation running without interruptions.
+            We serve homeowners, landlords, and commercial clients throughout Palo Alto, Menlo Park,
+            Mountain View, Los Altos, and surrounding Peninsula communities.
           </p>
           <h6 className="cta-form__why-title">Why Choose Us</h6>
           <div className="cta-form__why-grid">

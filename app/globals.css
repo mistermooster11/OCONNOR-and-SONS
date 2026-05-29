@@ -58,19 +58,20 @@
 }
 
 /* =========================================
-   BRAND TOKENS — unclogme.com
+   BRAND TOKENS — O'Connor & Sons Electric
    ========================================= */
 :root {
-  /* Brand Colors */
+  /* Brand Colors — O'Connor & Sons Electric */
   --color-primary: #EEF3F7;        /* light blue-gray bg */
   --color-secondary: #000000;      /* black */
-  --color-text: #4A5257;           /* body text */
-  --color-accent: #F14714;         /* orange-red CTA */
+  --color-text: #252525;           /* body text */
+  --color-accent: #FFD268;         /* gold CTA */
   --color-white: #FFFFFF;
-  --color-dark: #121C22;           /* dark navy */
-  --color-dark-2: #1F2428;         /* slightly lighter dark */
+  --color-dark: #266021;           /* dark green */
+  --color-dark-2: #1a4012;         /* mid green */
+  --color-topbar: #163413;         /* deep forest topbar */
   --color-light-gray: #C5D0D7;
-  --color-red-light: #E86556;      /* pricing checkmark color */
+  --color-red-light: #FFD268;      /* pricing checkmark / highlight */
   --color-bg-light: #FAFAFA;
 
   /* Typography */

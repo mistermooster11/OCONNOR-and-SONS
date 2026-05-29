@@ -2,14 +2,13 @@ import type { Metadata } from "next";
 import "@/styles/homepage.css";
 import PageHeroSection from "@/components/custom/page-hero/PageHeroSection";
 import FAQSection from "@/components/custom/faq/FAQSection";
-import NeedServicesSection from "@/components/custom/need-services/NeedServicesSection";
 import CTAFormSection from "@/components/custom/cta/CTAFormSection";
 import TestimonialsSection from "@/components/custom/testimonials/TestimonialsSection";
 
 export const metadata: Metadata = {
-  title: "FAQ — UnclogMe | Frequently Asked Questions",
+  title: "FAQ — O'Connor & Sons Electric | Electrical Questions Answered",
   description:
-    "Find answers to the most common questions about our grease trap cleaning and professional unclogging services in Miami-Dade.",
+    "Find answers to common questions about our electrical services, licensing, permits, EV charger installation, and more in Palo Alto.",
 };
 
 export default function FAQPage() {
@@ -17,14 +16,13 @@ export default function FAQPage() {
     <>
       <PageHeroSection
         title="Frequently Asked Questions"
-        subtitle="Everything you need to know about our services, pricing, and process."
+        subtitle="Everything you need to know about our services, licensing, pricing, and process."
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "FAQ" },
         ]}
       />
       <FAQSection />
-      {/* <NeedServicesSection /> */}
       <CTAFormSection />
       <TestimonialsSection />
     </>

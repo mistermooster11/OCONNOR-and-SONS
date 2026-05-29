@@ -10,18 +10,18 @@ export default function Footer() {
         <div className="footer__brand">
           <Link href="/">
             <Image
-              src="/images/logo-image-50.png"
-              alt="UnclogMe Logo"
-              width={239}
-              height={58}
+              src="/logo.svg"
+              alt="O'Connor &amp; Sons Electric"
+              width={200}
+              height={44}
               className="footer__logo"
               style={{ height: "auto" }}
             />
           </Link>
           <p className="footer__desc">
-            <strong>Unclogme</strong> delivers expert drain cleaning, grease trap pumping, and
-            camera inspection services for homes and businesses—trusted solutions when you need
-            them most.
+            <strong>O&apos;Connor &amp; Sons Electric</strong> is a licensed C10 electrical contractor
+            serving Palo Alto and the Peninsula for 30+ years. Residential, commercial, and remodel
+            electrical work — done right, done to code.
           </p>
           <div className="footer__socials">
             <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="footer__social-link">
@@ -75,7 +75,7 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="footer__bottom">
-        <p className="footer__copyright">Copyright 2025 Unclogme All rights reserved.</p>
+        <p className="footer__copyright">Copyright 2025 O&apos;Connor &amp; Sons Electric. All rights reserved.</p>
         <div className="footer__legal">
           <Link href="/terms-of-use/" className="footer__legal-link">Terms of Service</Link>
           <Link href="/privacy-coockie-policy/" className="footer__legal-link">Privacy Policy</Link>

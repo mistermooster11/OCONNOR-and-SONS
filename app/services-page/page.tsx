@@ -7,9 +7,9 @@ import TestimonialsSection from "@/components/custom/testimonials/TestimonialsSe
 import CTAFormSection from "@/components/custom/cta/CTAFormSection";
 
 export const metadata: Metadata = {
-  title: "Our Services — UnclogMe | Grease Trap & Drain Unclogging Miami",
+  title: "Our Services — O'Connor & Sons Electric | Licensed Palo Alto Electrician",
   description:
-    "Explore UnclogMe's full range of services: grease trap cleaning, residential & commercial unclogging, and camera inspections across Miami-Dade.",
+    "Explore O'Connor & Sons Electric's full range of electrical services: panel upgrades, EV charger installation, residential & commercial electrical, and more across the Peninsula.",
 };
 
 export default function ServicesPage() {
@@ -17,7 +17,7 @@ export default function ServicesPage() {
     <>
       <PageHeroSection
         title="Our Services"
-        subtitle="Professional grease trap cleaning and drain unclogging services — residential and commercial — across Miami-Dade, Broward & Palm Beach."
+        subtitle="Full-service electrical contractor for Palo Alto and the Peninsula — residential, commercial, and everything in between."
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Services" },

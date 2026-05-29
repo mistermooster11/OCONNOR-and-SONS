@@ -52,7 +52,7 @@ export default function ContactSection() {
         <div className="contact-section__info">
           <div className="contact-section__eyebrow">Contacts</div>
           <h2 className="contact-section__heading">
-            We are always ready <br />to help you and answer your questions
+            Get in Touch with a Licensed<br />C10 Electrician
           </h2>
 
           {/* Inner 2-col: left = Address + Social | right = Phone + Email */}
@@ -62,7 +62,7 @@ export default function ContactSection() {
             <div className="contact-section__details-col">
               <h5 className="contact-detail__label">Address</h5>
               <p className="contact-detail__value">
-                333 W 41st Street Suite #606 Miami Beach,&nbsp;Florida&nbsp;33140
+                849 Clara Dr, Palo Alto,&nbsp;CA&nbsp;94303
               </p>
 
               <h5 className="contact-detail__label">Follow us</h5>
@@ -94,12 +94,12 @@ export default function ContactSection() {
             <div className="contact-section__details-col">
               <h5 className="contact-detail__label">Phone</h5>
               <p className="contact-detail__value">
-                <Link href="tel:(305) 339 5638">(305) 339 5638</Link>
+                <Link href="tel:+16507401121">(650) 740-1121</Link>
               </p>
 
               <h5 className="contact-detail__label">Email</h5>
               <p className="contact-detail__value">
-                <Link href="mailto:contact@unclogme.com">contact@unclogme.com</Link>
+                <Link href="mailto:info@oconnorelectric.com">info@oconnorelectric.com</Link>
               </p>
             </div>
 

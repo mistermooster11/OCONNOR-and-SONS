@@ -31,15 +31,15 @@ export default function NeedServicesSection() {
     <section className="need-services" ref={sectionRef}>
       <div className="need-services__inner">
         <h2 className="need-services__heading">
-          Need Professional Unclogging Services
-          <br />in Miami-Dade?
+          Need a Licensed Electrician
+          <br />in Palo Alto or the Peninsula?
         </h2>
         <p className="need-services__text">
-          Request fast, professional residential or commercial unclogging and grease trap services
-          — available <br />24/7 with no extra charge.
+          Call O&apos;Connor &amp; Sons Electric for same-day service, panel upgrades, EV charger
+          installation, and all residential or commercial electrical work — done right the first time.
         </p>
         <Link href="/contact-us/" className="need-services__btn">
-          Fast Quote
+          Get a Free Quote
         </Link>
       </div>
     </section>
