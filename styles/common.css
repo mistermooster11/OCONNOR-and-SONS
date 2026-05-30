@@ -1,6 +1,6 @@
 /* =================================================
    COMMON CSS — Header + Footer + shared components
-   unclogme.com clone
+   O'Connor & Sons Electric
    ================================================= */
 
 /* ─── TOP BAR ──────────────────────────────────── */
@@ -203,7 +203,7 @@
 /* ─── MOBILE HAMBURGER ──────────────────────────── */
 .hamburger {
   display: none;
-  background: #E84F23;
+  background: var(--color-topbar);
   border: none;
   cursor: pointer;
   padding: 8px;

@@ -58,7 +58,7 @@ export default function BlogSection() {
               </Link>
             </div>
             <div className="blog-card__meta">
-              <Link href={`/2026/02/02/`} className="blog-card__date">
+              <Link href={post.slug} className="blog-card__date">
                 <span className="blog-card__day">{post.date}</span>
                 <span className="blog-card__month">{post.monthYear}</span>
               </Link>

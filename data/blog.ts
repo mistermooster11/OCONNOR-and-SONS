@@ -11,7 +11,7 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
-    slug: "/2026/01/15/signs-your-electrical-panel-needs-an-upgrade/",
+    slug: "/contact-us/",
     image: "/images/blog-panel-upgrade.jpg",
     date: "15",
     monthYear: "Jan '26",
@@ -22,7 +22,7 @@ export const blogPosts: BlogPost[] = [
       "Flickering lights, tripped breakers, and a panel that still uses fuses are all warning signs. Here's how to know when it's time to upgrade and what the process looks like.",
   },
   {
-    slug: "/2026/02/10/ev-charger-installation-what-to-expect/",
+    slug: "/contact-us/",
     image: "/images/blog-ev-charger.jpg",
     date: "10",
     monthYear: "Feb '26",

@@ -42,6 +42,13 @@ export default function ContactSection() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    const subject = encodeURIComponent(
+      form.subject || "Website Quote Request"
+    );
+    const body = encodeURIComponent(
+      `Name: ${form.fullName}\nPhone: ${form.phone}\nEmail: ${form.email}\nCity: ${form.city}\n\nMessage:\n${form.message}`
+    );
+    window.location.href = `mailto:info@oconnorelectric.com?subject=${subject}&body=${body}`;
   };
 
   return (
